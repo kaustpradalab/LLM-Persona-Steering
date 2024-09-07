@@ -34,7 +34,7 @@ def process_bg(json_file_path, argument):
     with open(json_file_path, "w", encoding="utf-8") as file:
         json.dump(data, file, ensure_ascii=False, indent=4)
 
-    print(f"{argument}_bg finished generation。")
+    print(f"{argument}_bg finished generation.")
 
 def get_args():
     parser = argparse.ArgumentParser()
