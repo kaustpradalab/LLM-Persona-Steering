@@ -1,0 +1,97 @@
+[
+    {
+        "idx": 0,
+        "latents": {
+            "fixed_bg":{
+                "Gender": "Female",
+                "Age": ">20, <50",
+                "Education level": "Higher",
+                "Socioeconomic status": "Upper middle class",
+                "Social ideology": "Environmentalism",
+                "Emotional intelligence": "Good at emotional management",
+                "Professional commitment": "Passionate and committed",
+                "Life satisfaction": "Fairly satisfied",
+                "Family background": "Strong ties"
+            },
+            "generative_bg":{
+
+            }
+        }
+    },
+    {
+        "idx": 1,
+        "latents": {
+            "fixed_bg":{
+                "Gender": "Female",
+                "Age": ">20, <50",
+                "Education level": "Higher",
+                "Socioeconomic status": "Upper middle class",
+                "Social ideology": "Environmentalism",
+                "Emotional intelligence": "Good at emotional management",
+                "Professional commitment": "Passionate and committed",
+                "Life satisfaction": "Fairly satisfied",
+                "Family background": "Strong ties"
+            },
+            "generative_bg":{
+
+            }
+        }
+    },
+    {
+        "idx": 2,
+        "latents": {
+            "fixed_bg":{
+                "Gender": "Female",
+                "Age": ">20, <50",
+                "Education level": "Higher",
+                "Socioeconomic status": "Upper middle class",
+                "Social ideology": "Environmentalism",
+                "Emotional intelligence": "Good at emotional management",
+                "Professional commitment": "Passionate and committed",
+                "Life satisfaction": "Fairly satisfied",
+                "Family background": "Strong ties"
+            },
+            "generative_bg":{
+
+            }
+        }
+    },
+    {
+        "idx": 3,
+        "latents": {
+            "fixed_bg":{
+                "Gender": "Female",
+                "Age": ">20, <50",
+                "Education level": "Higher",
+                "Socioeconomic status": "Upper middle class",
+                "Social ideology": "Environmentalism",
+                "Emotional intelligence": "Good at emotional management",
+                "Professional commitment": "Passionate and committed",
+                "Life satisfaction": "Fairly satisfied",
+                "Family background": "Strong ties"
+            },
+            "generative_bg":{
+
+            }
+        }
+    },
+    {
+        "idx": 4,
+        "latents": {
+            "fixed_bg":{
+                "Gender": "Female",
+                "Age": ">20, <50",
+                "Education level": "Higher",
+                "Socioeconomic status": "Upper middle class",
+                "Social ideology": "Environmentalism",
+                "Emotional intelligence": "Good at emotional management",
+                "Professional commitment": "Passionate and committed",
+                "Life satisfaction": "Fairly satisfied",
+                "Family background": "Strong ties"
+            },
+            "generative_bg":{
+
+            }
+        }
+    }
+]

@@ -1,0 +1,87 @@
+[
+    {
+        "Layer": 12,
+        "Details": {
+            "Gender": {
+                "female": {
+                    "references to gender or sex-related topics, especially focusing on female issues": 12813
+                },
+                "male": {
+                    "mentions of gender, particularly focusing on males and their descriptions": 13353
+                }
+            },
+            "Age": {
+                "young": {
+                    "references to young individuals": 12352
+                },
+                "old": {
+                    "mentions of actions or events related to caring for the elderly": 11060
+                }
+            },
+            "Education level": {
+                "bachelor's degree and higher": {
+                    "information about academic degrees and educational achievements": 3956
+                },
+                "middle school to highschool": {
+                    "references to high school-related activities and events": 6030
+                },
+                "uneducated or elementary school": {
+                    "ages and age-related information, particularly related to children": 5817,
+                    "information related to events and activities for children": 14423
+                }
+            },
+            "Socioeconomic status": {
+                "poor": {
+                    "negative descriptions of economic situations or conditions": 9602
+                },
+                "rich": {
+                    "mentions of wealth or affluence": 13253
+                }
+            },
+            "Social ideology": {
+                "Conservatism": {
+                    "mentions of conservative ideologies and politics": 5060
+                },
+                "Liberalism": {
+                    "phrases related to political ideologies and movements, specifically focusing on liberal beliefs and critiques of liberalism": 11575
+                },
+                "Nationalism": {
+                    "phrases related to political ideologies and nationalist sentiments": 9303
+                },
+                "Anarchism": {
+                    "details related to punk subculture and anarchist movements": 16274
+                },
+                "Communism": {
+                    "mentions of communist-related terms": 8471
+                },
+                "Fascism": {
+                    "references to Nazism, Nazis, and the Holocaust": 16193
+                }
+            },
+            "Emotional intelligence": {
+                "stable": {
+                    "the word 'calm' and related phrases indicating a sense of tranquility or peace": 15836
+                },
+                "volatile": {
+                    "descriptions related to fluctuations in physical or emotional states": 10015
+                }
+            },
+            "Professional commitment": {
+                "initiative": {
+                    "phrasing that describes proactive actions or leading roles within a group or project": 371
+                },
+                "inactive": {
+                    "negative descriptors indicating boredom or lack of interest": 14356
+                }
+            },
+            "Family background": {
+                "strong ties": {
+                    "phrases related to close personal relationships": 7140
+                },
+                "strained relationships": {
+                    "descriptions of various forms of abuse, including physical and sexual abuse": 14287
+                }
+            }
+        }
+    }
+]
