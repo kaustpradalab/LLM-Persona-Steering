@@ -1,2 +1,4 @@
 transformers
 accelerate
+transformer_lens
+sae-lens
