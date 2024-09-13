@@ -15,26 +15,54 @@ pip install -r requirements.txt
 Let't generate the keywords of each backgrounds first
 ```
 cd src/stimius_processing
-python SAE/processing_keywords.py --json_file [path to bg json] --num [# of bgs you want]
+python SAE/processing_keywords.py --json_file [path to save bg json] --num[# of bgs you want]
 ```
+
 Then, we can genertate bgs in two types(fixed & generative)
+
 ```
 python SAE/processing_bg.py --json_file [path to bg json] --bg_type ['fixed' or 'gen']
 ```
 1.2 Features Explorations
+You can use convert_to_features to convert the background to a proper features list which includes the key features related the background description
 
-### 2. SAE
+```
+python SAE/convert_to_features.py \
+    --save_path [path to json need to save] \
+    --pattern_path [path to pattern json] \
+    --background [path to background json] \
+    --layer [index of layer]
+```
+*More detailed examples refer to src/stimius_processing/SAE/sae_stimius_run.sh*
+
+### 2. RepE
 2.1 Keywords Generation
 
 2.2 Control Vector Training
 
 ## Vector Control & TRAIT-Dark Running
 
-### run TRAIT-Dark
+### 1. SAE
 run the TRAIT-Dark 
 ```
-python run.py --model_name [path to model] --model_name_short [short name of model] --inference_type chat --prompt_type [prompt type] --task_name [sae OR RepE] --background [path to bg]
+cd src/steer_experiments
+python SAE/sae_run.py \
+    --model_name  \
+    --sae_name  \
+    --layer  \
+    --coeff  \
+    --temperature  \
+    --freq_penalty  \
+    --bg_type  \
+    --steer_mode  \
+    --steer_file_path  \
+    --prompt_type  \
+    --inference_type  \
+    --save_dir_path
 ```
+*More detailed examples refer to src/steer_experiments/SAE/sae_trait_run.sh*
+
+### 2. RepE
 
 ## Result
 You can get the result of the model. 

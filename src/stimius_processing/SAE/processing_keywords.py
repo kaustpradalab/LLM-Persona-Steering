@@ -163,7 +163,7 @@ def main():
         last_index += 1
         entry = {
             "idx": last_index,
-            "features": response_list[i]
+            "attributes": response_list[i]
 
         }
         new_combined_data.append(entry)
@@ -173,6 +173,7 @@ def main():
     combined_data = existing_data + new_combined_data
     with open(save_path, 'w') as json_file:
         json.dump(combined_data, json_file, indent=4)
+    print(f"data is saved in {save_path}")
 
 
 if __name__ == '__main__':

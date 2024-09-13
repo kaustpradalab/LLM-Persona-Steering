@@ -2,7 +2,6 @@ import time, json, sys, os, torch, argparse
 import numpy as np
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from transformer_lens import HookedTransformer
-from 
 from util.option_dict_4 import *
 from util.prompts import  get_prompt
 from util.lm_format import apply_format
@@ -24,7 +23,7 @@ def get_likelihood(model, input_ids):
     
 def get_likelihood_steer(input_ids, model, layer, coeff, steering_vectors, steering_on, sampling_kwargs, seed=None):
     model.reset_hooks()
-    steering_hook = create_steering_hook(coeffs, steering_vectors, steering_on)
+    steering_hook = create_steering_hook(coeff, steering_vectors, steering_on)
     editing_hooks = [(f"blocks.{layer}.hook_resid_post", steering_hook)]
     return hooked_generate(model, input_ids, editing_hooks, seed=seed, **sampling_kwargs)
 
@@ -33,15 +32,16 @@ def get_args():
     parser.add_argument('--model_name', type=str, default=None, required=True)
     parser.add_argument('--sae_name', type=str, default=None, required=True)
     parser.add_argument('--layer', type=int, default=0)
-    parser.add_argument('--steer', type=str, default="SAE/bg_features")
-    parser.add_argument('--steer_mode', type=bool, default=True)
     parser.add_argument('--coeff', type=int, default=200)
+    parser.add_argument('--bg_type', choices=["fixed", "gen"], default="fixed")
+    parser.add_argument('--steer_mode', type=bool, default=True)
+    parser.add_argument('--steer_file_path', type=str)
+    parser.add_argument('--save_dir_path', type=str)
+
     parser.add_argument('--temperature', type=float, default=0.2)
     parser.add_argument('--freq_penalty', type=float, default=1.0)
-    
     parser.add_argument('--prompt_type', type=int, default=1)
     parser.add_argument('--inference_type', type=str, default="chat")
-    parser.add_argument('--paraphrase', action='store_true')
     parser.add_argument('--seed', type=int, default=16)
     return parser.parse_args()
 
@@ -54,14 +54,10 @@ def main():
     tokenizer = AutoTokenizer.from_pretrained(args.model_name)
     
     data=json.load(open("../data/TRAIT/TRAIT_Dark.json", encoding='utf-8'))
-    bg=json.load(open(f"../data/{args.steer}/{args.model_name}.json", encoding='utf-8'))
+    bg=json.load(open(args.steer_file_path, encoding='utf-8'))
     
-    if args.paraphrase:
-        run_type="inference_likelihood_paraphrase"
-    else:
-        run_type="inference_likelihood"
     subdir=f"prompt_type_{args.prompt_type}"
-    save_dir=f"../data/SAE/steer_result/{args.model_name}/{run_type}/{subdir}"
+    save_dir=f"{args.save_dir_path}/{subdir}"
 
     for i, bg_item in enumerate(bg):
         save_file_dir=os.path.join(save_dir, f"{bg_item['idx']}.json")
@@ -70,29 +66,28 @@ def main():
             os.makedirs(save_dir)
         
         res_arr=[]
-        bg_description=bg_item["Description"]
         for idx, sample in enumerate(data):
             print(idx)
-            if args.paraphrase:
-                instruction=sample["paraphrased_situation"]+" "+sample["paraphrased_query"]
-            else:
-                instruction=sample["situation"]+" "+sample["query"]
+            instruction=sample["situation"]+" "+sample["query"]
             response_high1=sample["response_high1"]
             response_high2=sample["response_high2"]
             response_low1=sample["response_low1"]
             response_low2=sample["response_low2"]
             sample["prompt_type"] = args.prompt_type
             sample["bg_index"] = bg_item['idx']
-        
+    
             for rev in [False, True]:
-                prompt=get_prompt(args.prompt_type, rev, bg_description, instruction, response_high1, response_high2, response_low1, response_low2)
+                prompt=get_prompt(args.prompt_type, rev, instruction, response_high1, response_high2, response_low1, response_low2)
                 encoded=apply_format(prompt, args.inference_type, tokenizer)
-                steering_vectors = get_steer_vectors(sae)
-                sampling_kwargs = dict(temperature=0.2, freq_penalty=1.0)
+                idx_dict, steering_vectors = get_steer_vectors(sae,args.bg_type, bg_item['features'])
+                print("we will steer the features:", idx_dict)
+                sampling_kwargs = dict(temperature=args.temperature, freq_penalty=args.freq_penalty)
                 
                 if args.steer_mode:
-                    likelihoods = get_likelihood_steer(encoded, model, args.layer, args.coeff, steering_vectors, args.steer_mode, sampling_kwargs, seed=args.seed).squeeze().tolist()
+                    print("Steer Mode: ON")
+                    likelihoods = get_likelihood_steer(encoded, model, args.layer, args.coeff, steering_vectors, False, sampling_kwargs, seed=args.seed).squeeze().tolist()
                 else:
+                    print("Steer Mode: OFF")
                     likelihoods = get_likelihood(model, encoded).squeeze().tolist()
                 vocab_probabilities={}
                 

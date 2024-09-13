@@ -75,10 +75,10 @@
                 }
             },
             "Family background": {
-                "strong ties": {
+                "relaxed": {
                     "phrases related to close personal relationships": 7140
                 },
-                "strained relationships": {
+                "strained": {
                     "descriptions of various forms of abuse, including physical and sexual abuse": 14287
                 }
             }

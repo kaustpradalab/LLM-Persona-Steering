@@ -1,14 +1,11 @@
 import json
 import time, sys, os, torch, argparse
-import config
 import requests
 import argparse
 import pandas as pd
 from openai import OpenAI
-
 import random
 import os
-
 class GPTAssistant:
     def __init__(self, api_key: str, url: str=None, model: str = "gpt-4-turbo"):
         self.client = OpenAI(
@@ -97,7 +94,6 @@ def fixed_bg(features):
     "Social ideology": "you hold strong beliefs in {Social ideology}",
     "Emotional intelligence": "You're an  {Emotional intelligence} person",
     "Professional commitment": "you show your professional commitment as someone who is {Professional commitment}",
-    "Life satisfaction": "in life, you feel {Life satisfaction} with your circumstances",
     "Family background": "your family relationship is {Family background}"
     }
     return {key: value.format(**features) for key, value in template.items()}
@@ -110,7 +106,7 @@ def generative_bg(features):
 
     # Example usage
 
-    plain_text_path = 'details_prompt.txt'
+    plain_text_path = 'SAE/details_prompt.txt'
     # system_prompt = "Task Description: \nYou are helping users to generate four types of prompts: naive prompts, keyword prompts, personality prompts and reverse personality prompt based on the given personality and realted keywords. \n The personality prompts are descriptive sentences about specific personality traits while reverse personality prompts are the opposite of personality prompts.\nThe sentence structure of the reverse personality prompt mirrors that of the original personality prompt.\n"
     # system_prompt = "Generate 100 unique American English speakers, each represented by a distinct combination of the following eight dimensions: gender, age (16-80), cultural identity, socioeconomic status, education level, family status, profession, and personal identity.\n Ensure diversity across these dimensions:\n "
     with open(plain_text_path, "r") as input_fp:
@@ -139,7 +135,7 @@ def process_bg(json_file_path, argument):
         data = json.load(file)
 
     for item in data:
-        features = item.get("features", {})
+        features = item.get("attributes", {})
         if argument == "fixed":
             item["fixed_bg"] = fixed_bg(features)
         elif argument == "gen":
@@ -149,6 +145,7 @@ def process_bg(json_file_path, argument):
         json.dump(data, file, ensure_ascii=False, indent=4)
 
     print(f"{argument}_bg finished generation.")
+    print(f"data is saved in {json_file_path}")
 
 def get_args():
     parser = argparse.ArgumentParser()
