@@ -57,11 +57,14 @@ def get_args():
     parser.add_argument('--save_path', type=str, default=None, required=True)
     parser.add_argument('--model_name', type=str, default=None, required=True)
     parser.add_argument('--prompt_type', type=int, default=1)
+    parser.add_argument('--bg_features', type=str, default=None, required=True)
     return parser.parse_args()
 
 def main():
     args = get_args()
     input_directory = f"{args.save_path}/prompt_type_{args.prompt_type}"
+    with open(os.path.join(args.bg_features, f"{args.model_name}.json"), 'r', encoding='utf-8') as file:
+        bg_features = json.load(file)
     result_data = []
     for filename in os.listdir(input_directory):
         if filename.endswith(".json"):
@@ -102,16 +105,23 @@ def main():
             scores = get_score(cnt_dict)
             result_data.append({
                 "idx": idx,
-                "Psychopathy": scores[0],
-                "Machiavellianism": scores[1],
-                "Narcissism": scores[2]
+                "scores": {
+                    "Psychopathy": scores[0],
+                    "Machiavellianism": scores[1],
+                    "Narcissism": scores[2]
+                }
             })
-
-
+            
+    for result in result_data:
+        item = next((item for item in bg_features if item["idx"] == result["idx"]), None)
+        if item:
+            item["scores"] = result["scores"]
+        
     # Write results to a new JSON file
     with open(f"{args.save_path}/summary_scores.json", "w") as outfile:
-        json.dump(result_data, outfile, indent=4)
-    
+        json.dump(bg_features, outfile, indent=4)
+        
+    print("Summary Score saved.")
             
     """  
     if args.prompt_type==1:

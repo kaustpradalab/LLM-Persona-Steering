@@ -52,7 +52,7 @@ def get_steer_vectors(sae, bg_type, features):
     if bg_type == "fixed":
         idx_dict = {}
         vector_list = []
-        for category, indices in features.get("fixed_bg", {}).items():
+        for category, indices in features.get("fixed", {}).items():
             idx_dict[category] = indices
             for idx in indices:
                 vector_list.append(sae.W_dec[idx])
