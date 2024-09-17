@@ -10,14 +10,12 @@ from util.steering import *
 def save_json(file_name, res_arr):
     with open(file_name, 'w') as f:
         json.dump(res_arr, f, indent=4, ensure_ascii=False)
-        
-device = "cuda"
 
-def get_likelihood(model, input_ids):
+def get_likelihood(model, input_ids, device):
     input_ids = input_ids.to(device)
     with torch.no_grad():
         outputs = model(input_ids)
-    logits = outputs.logits[:, -1, :]  # Logits for the last token
+    logits = outputs[:, -1, :]  # Logits for the last token
     probabilities = torch.softmax(logits, dim=-1)
     return probabilities
     
@@ -31,10 +29,11 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--model_name', type=str, default=None, required=True)
     parser.add_argument('--sae_name', type=str, default=None, required=True)
+    parser.add_argument('--tokenizer_name', type=str, default=None, required=True)
     parser.add_argument('--layer', type=int, default=0)
     parser.add_argument('--coeff', type=int, default=200)
     parser.add_argument('--bg_type', choices=["fixed", "gen"], default="fixed")
-    parser.add_argument('--steer_mode', type=bool, default=True)
+    parser.add_argument('--steer_mode', action='store_true', help="Enable steering mode")
     parser.add_argument('--steer_file_path', type=str)
     parser.add_argument('--save_dir_path', type=str)
 
@@ -49,9 +48,9 @@ def main():
     args = get_args()
     print(f"python {' '.join(sys.argv)}")
     
-    set_up()
-    model, sae, hook_point = load_model(args.model_name, args.sae_name, args.layer)
-    tokenizer = AutoTokenizer.from_pretrained(args.model_name)
+    device = set_up()
+    model, sae = load_model(args.model_name, args.sae_name, args.layer, device)
+    tokenizer = AutoTokenizer.from_pretrained(args.tokenizer_name)
     
     data=json.load(open("../data/TRAIT/TRAIT_Dark.json", encoding='utf-8'))
     bg=json.load(open(args.steer_file_path, encoding='utf-8'))
@@ -85,10 +84,10 @@ def main():
                 
                 if args.steer_mode:
                     print("Steer Mode: ON")
-                    likelihoods = get_likelihood_steer(encoded, model, args.layer, args.coeff, steering_vectors, False, sampling_kwargs, seed=args.seed).squeeze().tolist()
+                    likelihoods = get_likelihood_steer(encoded, model, args.layer, args.coeff, steering_vectors, True, sampling_kwargs, seed=args.seed).squeeze().tolist()
                 else:
                     print("Steer Mode: OFF")
-                    likelihoods = get_likelihood(model, encoded).squeeze().tolist()
+                    likelihoods = get_likelihood(model, encoded, device).squeeze().tolist()
                 vocab_probabilities={}
                 
                 if args.prompt_type==1:

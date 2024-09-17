@@ -65,10 +65,17 @@ python SAE/sae_run.py \
 ### 2. RepE
 
 ## Result
-You can get the result of the model. 
+
+### 1. SAE
+You can get the result of the sae task. 
 ```
-python analysis.py --model_name gemma2_2b --prompt_type 1 --task_name sae
+python SAE/analysis.py \
+    --save_path \
+    --prompt_type 1 
 ```
+*More detailed examples refer to src/steer_experiments/SAE/sae_trait_run*
+
+### 2. RepE
 
 ## Reference
 > **Do LLMs Have Distinct and Consistent Personalities? TRAIT: Personality Testset designed for LLMs with Psychometrics**

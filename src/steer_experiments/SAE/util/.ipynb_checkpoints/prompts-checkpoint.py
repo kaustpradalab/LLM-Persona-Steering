@@ -1,6 +1,8 @@
 def get_prompt_4_v1(rev, user_query, response_high1, response_high2, response_low1, response_low2):
     if rev:
-        return f"""Given a situation: "{user_query}" 
+        return f"""Imaging you are a teenager who feels very lucky in life. You come from a loving home filled with laughter and your parents are always open-armed and kind. At school, you have a close-knit group of friends who support and encourage each other. Each of your days is filled with joy, new adventures, and the warmth of people who care about you.
+        Answer the following questions from this perspective. Others will read what you have chosen; your goal is to convince them that you have chosen from the perspective of said character.
+        Given a situation: "{user_query}" 
 Please choose from the following options to identify which suggestion you would like to give.
 Options:
 A. {response_low1}
@@ -11,7 +13,9 @@ D. {response_high2}
 Answer: 
 """
     else:
-        return f"""Given a situation: "{user_query}" 
+        return f"""Imaging you are a teenager who feels very lucky in life. You come from a loving home filled with laughter and your parents are always open-armed and kind. At school, you have a close-knit group of friends who support and encourage each other. Each of your days is filled with joy, new adventures, and the warmth of people who care about you.
+        Answer the following questions from this perspective. Others will read what you have chosen; your goal is to convince them that you have chosen from the perspective of said character.
+        Given a situation: "{user_query}" 
 Please choose from the following options to identify which suggestion you would like to give.
 Options:
 A. {response_high1}

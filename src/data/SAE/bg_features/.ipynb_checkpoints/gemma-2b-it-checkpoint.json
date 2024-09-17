@@ -1,0 +1,71 @@
+[
+    {
+        "idx": 0,
+        "features": {
+            "fixed_bg": {},
+            "generative_bg": null
+        }
+    },
+    {
+        "idx": 1,
+        "features": {
+            "fixed_bg": {
+                "Gender": [
+                    12813
+                ],
+                "Education level": [
+                    5817,
+                    14423
+                ],
+                "Socioeconomic status": [
+                    9602
+                ],
+                "Social ideology": [
+                    5060
+                ],
+                "Emotional intelligence": [
+                    10015
+                ],
+                "Professional commitment": [
+                    14356
+                ],
+                "Family background": [
+                    14287
+                ]
+            },
+            "generative_bg": null
+        }
+    },
+    {
+        "idx": 2,
+        "features": {
+            "fixed_bg": {
+                "Gender": [
+                    13353
+                ],
+                "Age": [
+                    12352
+                ],
+                "Education level": [
+                    3956
+                ],
+                "Socioeconomic status": [
+                    13253
+                ],
+                "Social ideology": [
+                    9303
+                ],
+                "Emotional intelligence": [
+                    15836
+                ],
+                "Professional commitment": [
+                    371
+                ],
+                "Family background": [
+                    7140
+                ]
+            },
+            "generative_bg": null
+        }
+    }
+]

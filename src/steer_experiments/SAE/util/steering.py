@@ -7,8 +7,6 @@ from jaxtyping import Int, Float
 from transformer_lens import HookedTransformer
 from sae_lens import SAE
 
-device = ""
-
 def set_up():
     torch.set_grad_enabled(False)
     if torch.backends.mps.is_available():
@@ -16,8 +14,9 @@ def set_up():
     else:
         device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"Device: {device}")
+    return device
 
-def load_model(model_name, sae_name, layer):
+def load_model(model_name, sae_name, layer, device):
     # get model
     model = HookedTransformer.from_pretrained(model_name, device = device)
     # get the SAE for this layer
@@ -53,7 +52,7 @@ def get_steer_vectors(sae, bg_type, features):
     if bg_type == "fixed":
         idx_dict = {}
         vector_list = []
-        for category, indices in features.get("fixed_bg", {}).items():
+        for category, indices in features.get("fixed", {}).items():
             idx_dict[category] = indices
             for idx in indices:
                 vector_list.append(sae.W_dec[idx])

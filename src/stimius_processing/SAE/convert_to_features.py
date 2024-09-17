@@ -32,23 +32,18 @@ def process_features(save_path, pattern_path, background, layer):
     for layer in pattern:
         if layer.get("Layer") == 12:
             details =  layer.get("Details", {})
-        
-    new_data = []
+
     
     for idx, item in enumerate(data):
-        new_item = {
-            "idx": idx,
-            "features": {}
+    # Add a new "features" key to the existing item
+        item["features"] = {
+            "fixed": fixed_features(item.get("attributes", {}), details),
+            "generative": generative_features(item.get("generative_bg", {}))
         }
-
-        new_item["features"]["fixed_bg"] = fixed_features(item.get("attributes", {}), details)
-        new_item["features"]["generative_bg"] = generative_features(item.get("generative_bg", {}))
-
-        new_data.append(new_item)
 
     # Save the modified data back to the file
     with open(save_path, "w", encoding="utf-8") as file:
-        json.dump(new_data, file, ensure_ascii=False, indent=4)
+        json.dump(data, file, ensure_ascii=False, indent=4)
 
     print(f"features data is saved in {save_path}")
 
