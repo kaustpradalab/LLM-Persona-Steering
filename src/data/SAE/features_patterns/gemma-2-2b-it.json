@@ -1,0 +1,107 @@
+[
+    {
+        "Layer": 17,
+        "Details": {
+            "Gender": {
+                "female": {
+                    "references to women and women's issues": 56179,
+                    "mentions and references to women and women's issues": 46172
+                },
+                "male": {
+                    "references to gender, specifically male-related terms": 44312,
+                    "references to men or male characters": 37970
+                }
+            },
+            "Age": {
+                "young": {
+                    "references to youth or young individuals": 22235,
+                    "references to young individuals": 32443
+                },
+                "old": {
+                    "references to elders and elder individuals": 11609,
+                    "references to the elderly population and their health-related issues": 32405
+                }
+            },
+            "Education level": {
+                "bachelor's degree and higher": {
+                    "references to academic degrees": 30291,
+                    "educational qualifications and academic degrees": 48739
+                },
+                "middle school to highschool": {
+                    "information related to student grades and educational levels": 33987,
+                    "information related to school policies and eligibility criteria for programs": 33102
+                },
+                "uneducated or elementary school": {
+                    "references to elementary schools": 56633
+                }
+            },
+            "Socioeconomic status": {
+                "poor": {
+                    "topics related to socioeconomic struggles and class disparities": 20036,
+                    "references to poverty and its implications": 33205
+                },
+                "rich": {
+                    "concepts related to luxury": 29323,
+                    "descriptions related to richness and depth in various contexts": 30157
+                }
+            },
+            "Social ideology": {
+                "Conservatism": {
+                    "expressions related to conservative ideology": 31293
+                },
+                "Liberalism": {
+                    "references to liberal ideologies and associated political terms": 4177
+                },
+                "Nationalism": {
+                    "references to national identity or national entities": 9485
+                },
+                "Anarchism": {
+                    "concepts related to freedom and independence": 36827,
+                    "political terms related to extremism and progressive ideologies": 43308,
+                    "references to social unrest and protests": 39441
+                },
+                "Communism": {
+                    "terms related to communism and revolutionary political concepts": 29013
+                },
+                "Fascism": {
+                    "terms related to the concept of \"Fas\" and \"fascism.\"": 4212,
+                    "references to far-right ideology and associated violence": 58419,
+                    "references to terrorist groups and their activities": 63612
+                }
+            },
+            "Emotional intelligence": {
+                "stable": {
+                    "references to the concept of calmness": 7456,
+                    "terms related to stability in various contexts": 50957,
+                    "words associated with tranquility and serenity": 36511
+                },
+                "volatile": {
+                    "discussions of mental health and emotional instability": 882,
+                    "descriptions of emotional and behavioral characteristics, particularly those related to impulsivity and lack of self-control": 64917
+                }
+            },
+            "Professional commitment": {
+                "initiative": {
+                    "phrases related to the seriousness of taking requests from beneficiaries": 51674,
+                    "terms related to proactivity and proactive behaviors": 2530
+                },
+                "inactive": {
+                    "derogatory stereotypes about racial groups, particularly regarding work ethic and behavior": 61162,
+                    "expressions of arrogance and disdain": 63936
+                }
+            },
+            "Family background": {
+                "relaxed": {
+                    "mentions of love": 622,
+                    "references to trust and trusting relationships": 27787
+                },
+                "strained": {
+                    "references to bullying and related situations": 32722,
+                    "references to violence": 50583,
+                    "instances of domestic violence and related legal implications": 56221,
+                    "terms related to substance use and abuse": 52368
+                }
+            }
+        }
+    }
+]
