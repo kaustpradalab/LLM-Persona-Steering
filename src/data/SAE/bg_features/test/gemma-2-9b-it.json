@@ -12,14 +12,14 @@
             "Family background": ""
         },
         "fixed_bg": {
-            "Gender": "",
-            "Age": "",
-            "Education level": "",
-            "Socioeconomic status": "",
-            "Social ideology": "",
-            "Emotional intelligence": "",
-            "Professional commitment": "",
-            "Family background": ""
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is "
         },
         "generative_bg": "",
         "features": {
@@ -53,26 +53,37 @@
         "features": {
             "fixed": {
                 "Gender": [
-                    12813
+                    96637
+                ],
+                "Age": [
+                    127044,
+                    31626
                 ],
                 "Education level": [
-                    5817,
-                    14423
+                    8744,
+                    76612
                 ],
                 "Socioeconomic status": [
-                    9602
+                    81363,
+                    53333
                 ],
                 "Social ideology": [
-                    5060
+                    30812,
+                    38950
                 ],
                 "Emotional intelligence": [
-                    10015
+                    82676,
+                    17689,
+                    64525
                 ],
                 "Professional commitment": [
-                    14356
+                    87888,
+                    89938
                 ],
                 "Family background": [
-                    14287
+                    93006,
+                    53178,
+                    33570
                 ]
             },
             "generative": null
@@ -91,8 +102,8 @@
             "Family background": "relaxed"
         },
         "fixed_bg": {
-            "Gender": "your gender is female",
-            "Age": "you are a older people",
+            "Gender": "your gender is male",
+            "Age": "you are a young people",
             "Education level": "you have a bachelor's degree and higher education level",
             "Socioeconomic status": "you come from a rich wealth status background",
             "Social ideology": "you hold strong beliefs in Nationalism",
@@ -104,28 +115,35 @@
         "features": {
             "fixed": {
                 "Gender": [
-                    13353
+                    114317
                 ],
                 "Age": [
-                    12352
+                    108854,
+                    38588
                 ],
                 "Education level": [
-                    3956
+                    21439,
+                    85771
                 ],
                 "Socioeconomic status": [
-                    13253
+                    10022,
+                    1739
                 ],
                 "Social ideology": [
-                    9303
+                    93356,
+                    121777
                 ],
                 "Emotional intelligence": [
-                    15836
+                    95973,
+                    74779
                 ],
                 "Professional commitment": [
-                    371
+                    79208,
+                    114268
                 ],
                 "Family background": [
-                    7140
+                    105115,
+                    40350
                 ]
             },
             "generative": null

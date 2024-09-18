@@ -1,7 +1,7 @@
 Generate an English speaker, each represented by a distinct combination of the following nine dimensions:
 1. gender (male or female),
 2. age (choose from young, older),
-3. education level (uneducated or elementary school, middle school to highschool, bachelor's degree and higher),
+3. education level (uneducated or elementary school, middle school to high school, bachelor's degree and higher),
 4. socioeconomic status (rich, poor),
 5. social ideology (Conservatism, Liberalism, Communism, Nationalism, Anarchism, Fascism)
 6. emotional intelligence (stable, volatile),

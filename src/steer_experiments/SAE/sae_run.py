@@ -29,6 +29,7 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--model_name', type=str, default=None, required=True)
     parser.add_argument('--sae_name', type=str, default=None, required=True)
+    parser.add_argument('--sae_id', type=str, default=None, required=True)
     parser.add_argument('--tokenizer_name', type=str, default=None, required=True)
     parser.add_argument('--layer', type=int, default=0)
     parser.add_argument('--coeff', type=int, default=200)
@@ -49,7 +50,7 @@ def main():
     print(f"python {' '.join(sys.argv)}")
     
     device = set_up()
-    model, sae = load_model(args.model_name, args.sae_name, args.layer, device)
+    model, sae = load_model(args.model_name, args.sae_name, args.sae_id, device)
     tokenizer = AutoTokenizer.from_pretrained(args.tokenizer_name)
     
     data=json.load(open("../data/TRAIT/TRAIT_Dark.json", encoding='utf-8'))

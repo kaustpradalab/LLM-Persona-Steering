@@ -15,7 +15,7 @@
                 "young": {
                     "references to young individuals": 12352
                 },
-                "old": {
+                "older": {
                     "mentions of actions or events related to caring for the elderly": 11060
                 }
             },
@@ -23,7 +23,7 @@
                 "bachelor's degree and higher": {
                     "information about academic degrees and educational achievements": 3956
                 },
-                "middle school to highschool": {
+                "middle school to high school": {
                     "references to high school-related activities and events": 6030
                 },
                 "uneducated or elementary school": {

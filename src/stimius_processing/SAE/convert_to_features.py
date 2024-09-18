@@ -30,7 +30,7 @@ def process_features(save_path, pattern_path, background, layer):
         pattern = json.load(file)
 
     for layer in pattern:
-        if layer.get("Layer") == 12:
+        if layer.get("Layer") is not None:
             details =  layer.get("Details", {})
 
     
