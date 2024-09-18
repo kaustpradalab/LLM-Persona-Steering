@@ -19,7 +19,7 @@ python SAE/sae_run.py \
 python SAE/sae_run.py \
     --model_name gemma-2-2b-it \
     --sae_name gemma-scope-2b-pt-res-canonical \
-    --sae_id layer_17/width_16k/canonical \
+    --sae_id layer_17/width_65k/canonical \
     --tokenizer_name google/gemma-2-2b-it \
     --layer 17 \
     --coeff 100 \
