@@ -6,7 +6,7 @@ python SAE/sae_run.py \
     --sae_id layer_31/width_131k/canonical \
     --tokenizer_name google/gemma-2-9b-it \
     --layer 31 \
-    --coeff 200 \
+    --coeff 600 \
     --temperature 0.2 \
     --freq_penalty 1 \
     --bg_type fixed \
