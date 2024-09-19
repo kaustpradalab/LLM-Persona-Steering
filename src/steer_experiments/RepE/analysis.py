@@ -19,21 +19,35 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--model_name', type=str, default=None, required=True)
     parser.add_argument('--prompt_type', type=int, default=1)
-    parser.add_argument('--task_name', type=str, default="sae")
+    parser.add_argument('--task_name', type=str, default="RePE")
     return parser.parse_args()
 
-def get_likelihoods(sample, option_tokens, model_name):
+def get_likelihoods_baseline(sample, option_tokens, model_name):
     """Calculate likelihoods based on whether model_name contains 'gpt'."""
     likelihood = {}
     likelihood_rev = {}
     if "gpt" in model_name.lower():
         for token in option_tokens:
-            likelihood[token] = np.exp(sample["likelihood"].get(token, 0))
-            likelihood_rev[token] = np.exp(sample["likelihood_rev"].get(token, 0))
+            likelihood[token] = np.exp(sample["likelihood"]['output_0'].get(token, 0))
+            likelihood_rev[token] = np.exp(sample["likelihood_rev"]['output_0'].get(token, 0))
     else:
         for token in option_tokens:
-            likelihood[token] = sample["likelihood"].get(token, 0)
-            likelihood_rev[token] = sample["likelihood_rev"].get(token, 0)
+            likelihood[token] = sample["likelihood"]['output_0'].get(token, 0)
+            likelihood_rev[token] = sample["likelihood_rev"]['output_0'].get(token, 0)
+    return likelihood, likelihood_rev
+
+def get_likelihoods_control(sample, option_tokens, model_name):
+    """Calculate likelihoods based on whether model_name contains 'gpt'."""
+    likelihood = {}
+    likelihood_rev = {}
+    if "gpt" in model_name.lower():
+        for token in option_tokens:
+            likelihood[token] = np.exp(sample["likelihood"]['output_1'].get(token, 0))
+            likelihood_rev[token] = np.exp(sample["likelihood_rev"]['output_1'].get(token, 0))
+    else:
+        for token in option_tokens:
+            likelihood[token] = sample["likelihood"]['output_1'].get(token, 0)
+            likelihood_rev[token] = sample["likelihood_rev"]['output_1'].get(token, 0)
     return likelihood, likelihood_rev
 
 def normalize_likelihoods(likelihoods):
@@ -62,55 +76,82 @@ def get_option_token(options):
 
 def main():
     args = get_args()
-    input_directory = f"../result/{args.model_name}/inference_likelihood/{args.task_name}/prompt_type_{args.prompt_type}"
+    input_directory = f"../result/gemma-2b/{args.task_name}/prompt_type_{args.prompt_type}"
+
     result_data = []
     for filename in os.listdir(input_directory):
         if filename.endswith(".json"):
-            idx = int(filename.split('.')[0])  # Extract index from filename
-            filepath = os.path.join(input_directory, filename)
-            data = json.load(open(filepath))
+            for item in ['baseline','control']:
+                # Extract index from filename
+                # idx = int(filename.split('.')[0])  
+                filepath = os.path.join(input_directory, filename)
+                data = json.load(open(filepath))
 
-            # Determine option tokens based on prompt type
-            if args.prompt_type == 1:
-                option_tokens = get_option_token("ABCD")
-            elif args.prompt_type == 2:
-                option_tokens = get_option_token("1234")
-            elif args.prompt_type == 3:
-                option_tokens = get_option_token("ABCD")
+                # Determine option tokens based on prompt type
+                if args.prompt_type == 1:
+                    option_tokens = get_option_token("ABCD")
+                elif args.prompt_type == 2:
+                    option_tokens = get_option_token("1234")
+                elif args.prompt_type == 3:
+                    option_tokens = get_option_token("ABCD")
 
-            # Initialize count dictionary for this file
-            cnt_dict = {
-                "Psychopathy": {"high": 0, "low": 0},
-                "Machiavellianism": {"high": 0, "low": 0},
-                "Narcissism": {"high": 0, "low": 0},
-            }
-
-            for sample in data:
-                personality = sample["personality"]
+                # Initialize count dictionary for this file
+                cnt_dict = {
+                    "Psychopathy": {"high": 0, "low": 0},
+                    "Machiavellianism": {"high": 0, "low": 0},
+                    "Narcissism": {"high": 0, "low": 0},
+                }
                 
-                # Process likelihoods
-                likelihoods = get_likelihoods(sample, option_tokens, args.model_name)
-                likelihood_norms = normalize_likelihoods(likelihoods)
-                max_option = get_max_option(likelihood_norms)
+                if item=='baseline':
+                    for sample in data:
+                        personality = sample["personality"]
+                
+                        # Process likelihoods
+                        likelihoods = get_likelihoods_baseline(sample, option_tokens, args.model_name)
+                        likelihood_norms = normalize_likelihoods(likelihoods)
+                        max_option = get_max_option(likelihood_norms)
 
-                # Update counts based on max option
-                if max_option in [0, 1]:
-                    cnt_dict[personality]["high"] += 1
-                elif max_option in [2, 3]:
-                    cnt_dict[personality]["low"] += 1
+                        # Update counts based on max option
+                        if max_option in [0, 1]:
+                            cnt_dict[personality]["high"] += 1
+                        elif max_option in [2, 3]:
+                            cnt_dict[personality]["low"] += 1
 
-            # Calculate scores and append results
-            scores = get_score(cnt_dict)
-            result_data.append({
-                "idx": idx,
-                "Psychopathy": scores[0],
-                "Machiavellianism": scores[1],
-                "Narcissism": scores[2]
-            })
+                    # Calculate scores and append results
+                    scores = get_score(cnt_dict)
+                    result_data.append({
+                        "idx": 0,
+                        "Psychopathy": scores[0],
+                        "Machiavellianism": scores[1],
+                        "Narcissism": scores[2]
+                    })
 
+                else:
+                    for sample in data:
+                        personality = sample["personality"]
+                        
+                        # Process likelihoods
+                        likelihoods = get_likelihoods_control(sample, option_tokens, args.model_name)
+                        likelihood_norms = normalize_likelihoods(likelihoods)
+                        max_option = get_max_option(likelihood_norms)
+
+                        # Update counts based on max option
+                        if max_option in [0, 1]:
+                            cnt_dict[personality]["high"] += 1
+                        elif max_option in [2, 3]:
+                            cnt_dict[personality]["low"] += 1
+
+                    # Calculate scores and append results
+                    scores = get_score(cnt_dict)
+                    result_data.append({
+                        "idx": 1,
+                        "Psychopathy": scores[0],
+                        "Machiavellianism": scores[1],
+                        "Narcissism": scores[2]
+                    })
 
     # Write results to a new JSON file
-    with open(f"../result/{args.model_name}/inference_likelihood/{args.task_name}/summary_scores.json", "w") as outfile:
+    with open(f"../result/gemma-2b/{args.task_name}/summary_scores.json", "w") as outfile:
         json.dump(result_data, outfile, indent=4)
     
             
