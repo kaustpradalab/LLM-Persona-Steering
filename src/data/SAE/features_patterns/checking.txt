@@ -162,7 +162,28 @@
                 Fails to meet deadlines
                 Lack of work discipline
                 Avoids responsibility
-                Performs below expectations"
+                Performs below expectations",
+                
+                "Highly dedicated
+                Responsible work habits
+                Attentive to duties
+                Motivated
+                Organized
+                Careful with tasks
+                Reliable employee
+                Strong work ethic
+                Wholehearted effort
+                Strong attention to detail
+                Acts promptly
+                Takes accountability
+                Engaged at work
+                Consistent performance
+                Committed to responsibilities
+                Professional behavior
+                Meets deadlines
+                Strong work discipline
+                Takes responsibility
+                Performs above expectations"
             ],
             "Family background": [
                 "Dysfunctional family

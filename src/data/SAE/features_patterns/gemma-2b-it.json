@@ -5,15 +5,20 @@
         "Details": {
             "Gender": {
                 "female": {
-                    "references to gender or sex-related topics, especially focusing on female issues": 12813
+                    "references to gender or sex-related topics, especially focusing on female issues": 12813,
+                    "references to females": 6221,
+                    "references to women, women's issues, and organizations related to women's rights": 4448
                 },
                 "male": {
-                    "mentions of gender, particularly focusing on males and their descriptions": 13353
+                    "mentions of gender, particularly focusing on males and their descriptions": 13353,
+                    "the word \"men\" in various contexts depicting male-related activities or situations": 724,
+                    "phrases related to masculinity": 12221
                 }
             },
             "Age": {
                 "young": {
-                    "references to young individuals": 12352
+                    "references to young individuals": 12352,
+                    "mentions of youth movements and related activities": 14596
                 },
                 "older": {
                     "mentions of actions or events related to caring for the elderly": 11060
@@ -27,7 +32,7 @@
                     "references to high school-related activities and events": 6030
                 },
                 "uneducated or elementary school": {
-                    "ages and age-related information, particularly related to children": 5817,
+                    "references to educational institutions and primary/elementary school concepts": 11760,
                     "information related to events and activities for children": 14423
                 }
             },
@@ -64,23 +69,29 @@
                     "the word 'calm' and related phrases indicating a sense of tranquility or peace": 15836
                 },
                 "volatile": {
-                    "descriptions related to fluctuations in physical or emotional states": 10015
+                    "expressions related to anger and frustration": 10774,
+                    "phrases related to emotional sensitivity": 10418,
+                    "references to anxiety and anxiety disorders": 6503
                 }
             },
             "Professional commitment": {
                 "initiative": {
-                    "phrasing that describes proactive actions or leading roles within a group or project": 371
+                    "phrasing that describes proactive actions or leading roles within a group or project": 371,
+                    "words related to dedication and commitment": 13659
                 },
                 "inactive": {
-                    "negative descriptors indicating boredom or lack of interest": 14356
+                    "negative descriptors indicating boredom or lack of interest": 14356,
+                    "verbs related to failure or not meeting expectations": 9466
                 }
             },
             "Family background": {
                 "relaxed": {
-                    "phrases related to close personal relationships": 7140
+                    "phrases related to close personal relationships": 7140,
+                    "terms related to mutual respect and mutually beneficial relationships": 16264
                 },
                 "strained": {
-                    "descriptions of various forms of abuse, including physical and sexual abuse": 14287
+                    "information related to domestic violence, gender misconceptions, and statistics on abuse": 10055,
+                    "information related to divorce, including details about married couples, legal aspects, and implications on familie": 5030
                 }
             }
         }

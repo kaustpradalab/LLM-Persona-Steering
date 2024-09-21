@@ -53,13 +53,15 @@
         "features": {
             "fixed": {
                 "Gender": [
-                    12813
+                    12813,
+                    6221,
+                    4448
                 ],
                 "Age": [
                     11060
                 ],
                 "Education level": [
-                    5817,
+                    11760,
                     14423
                 ],
                 "Socioeconomic status": [
@@ -69,13 +71,17 @@
                     5060
                 ],
                 "Emotional intelligence": [
-                    10015
+                    10774,
+                    10418,
+                    6503
                 ],
                 "Professional commitment": [
-                    14356
+                    14356,
+                    9466
                 ],
                 "Family background": [
-                    14287
+                    10055,
+                    5030
                 ]
             },
             "generative": null
@@ -107,10 +113,13 @@
         "features": {
             "fixed": {
                 "Gender": [
-                    13353
+                    13353,
+                    724,
+                    12221
                 ],
                 "Age": [
-                    12352
+                    12352,
+                    14596
                 ],
                 "Education level": [
                     3956
@@ -125,10 +134,12 @@
                     15836
                 ],
                 "Professional commitment": [
-                    371
+                    371,
+                    13659
                 ],
                 "Family background": [
-                    7140
+                    7140,
+                    16264
                 ]
             },
             "generative": null
