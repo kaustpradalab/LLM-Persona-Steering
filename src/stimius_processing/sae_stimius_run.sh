@@ -18,8 +18,8 @@ python SAE/convert_to_features.py \
     --layer 12
 
 python SAE/convert_to_features.py \
-    --save_path ../data/SAE/bg_features/test/gemma-2-2b-it.json \
-    --pattern_path ../data/SAE/features_patterns/gemma-2-2b-it.json \
+    --save_path ../data/SAE/bg_features/test/gemma-2-2b.json \
+    --pattern_path ../data/SAE/features_patterns/gemma-2-2b.json \
     --background ../data/SAE/background/background_test.json \
     --layer 17
 
@@ -43,8 +43,8 @@ python SAE/convert_to_features.py \
     --layer 12
 
 python SAE/convert_to_features.py \
-    --save_path ../data/SAE/bg_features/p5_n5/gemma-2-2b-it.json \
-    --pattern_path ../data/SAE/features_patterns/gemma-2-2b-it.json \
+    --save_path ../data/SAE/bg_features/p5_n5/gemma-2-2b.json \
+    --pattern_path ../data/SAE/features_patterns/gemma-2-2b.json \
     --background ../data/SAE/background/background_details_p5_n5.json \
     --layer 17
 
@@ -68,8 +68,8 @@ python SAE/convert_to_features.py \
     --layer 12
 
 python SAE/convert_to_features.py \
-    --save_path ../data/SAE/bg_features/p7_n3/gemma-2-2b-it.json \
-    --pattern_path ../data/SAE/features_patterns/gemma-2-2b-it.json \
+    --save_path ../data/SAE/bg_features/p7_n3/gemma-2-2b.json \
+    --pattern_path ../data/SAE/features_patterns/gemma-2-2b.json \
     --background ../data/SAE/background/background_details_p7_n3.json \
     --layer 17
 
