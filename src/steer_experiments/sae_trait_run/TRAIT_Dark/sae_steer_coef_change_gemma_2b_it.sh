@@ -14,7 +14,8 @@ python SAE/sae_run.py \
     --steer_file_path ../data/SAE/bg_features/test/gemma-2b-it.json \
     --prompt_type 1 \
     --inference_type chat \
-    --save_dir_path ../data/SAE/steer_result/case_study/coeff_change/gemma-2b-it/gemma-2b-it_coeff200_tem02
+    --save_dir_path ../data/SAE/steer_result/case_study/coeff_change/gemma-2b-it/gemma-2b-it_coeff200_tem02 \
+    --testset TRAIT_Dark
 
 python SAE/analysis.py \
     --save_path ../data/SAE/steer_result/case_study/coeff_change/gemma-2b-it/gemma-2b-it_coeff200_tem02 \
@@ -36,7 +37,8 @@ python SAE/sae_run.py \
     --steer_file_path ../data/SAE/bg_features/test/gemma-2b-it.json \
     --prompt_type 1 \
     --inference_type chat \
-    --save_dir_path ../data/SAE/steer_result/case_study/coeff_change/gemma-2b-it/gemma-2b-it_coeff400_tem02
+    --save_dir_path ../data/SAE/steer_result/case_study/coeff_change/gemma-2b-it/gemma-2b-it_coeff400_tem02 \
+    --testset TRAIT_Dark
 
 python SAE/analysis.py \
     --save_path ../data/SAE/steer_result/case_study/coeff_change/gemma-2b-it/gemma-2b-it_coeff400_tem02 \
@@ -58,7 +60,8 @@ python SAE/sae_run.py \
     --steer_file_path ../data/SAE/bg_features/test/gemma-2b-it.json \
     --prompt_type 1 \
     --inference_type chat \
-    --save_dir_path ../data/SAE/steer_result/case_study/coeff_change/gemma-2b-it/gemma-2b-it_coeff800_tem02
+    --save_dir_path ../data/SAE/steer_result/case_study/coeff_change/gemma-2b-it/gemma-2b-it_coeff800_tem02 \
+    --testset TRAIT_Dark
 
 python SAE/analysis.py \
     --save_path ../data/SAE/steer_result/case_study/coeff_change/gemma-2b-it/gemma-2b-it_coeff800_tem02 \

@@ -37,6 +37,7 @@ def get_args():
     parser.add_argument('--steer_mode', action='store_true', help="Enable steering mode")
     parser.add_argument('--steer_file_path', type=str)
     parser.add_argument('--save_dir_path', type=str)
+    parser.add_argument('--testset', type=str, default="TRAIT_Dark")
 
     parser.add_argument('--temperature', type=float, default=0.2)
     parser.add_argument('--freq_penalty', type=float, default=1.0)
@@ -53,7 +54,7 @@ def main():
     model, sae = load_model(args.model_name, args.sae_name, args.sae_id, device)
     tokenizer = AutoTokenizer.from_pretrained(args.tokenizer_name)
     
-    data=json.load(open("../data/TRAIT/TRAIT_Dark.json", encoding='utf-8'))
+    data=json.load(open(f"../data/TRAIT/{args.testset}.json", encoding='utf-8'))
     bg=json.load(open(args.steer_file_path, encoding='utf-8'))
     
     subdir=f"prompt_type_{args.prompt_type}"
