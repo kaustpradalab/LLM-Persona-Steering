@@ -60,7 +60,7 @@ python SAE/sae_run.py \
     --inference_type  \
     --save_dir_path
 ```
-*More detailed examples refer to src/steer_experiments/SAE/sae_trait_run.sh*
+*More detailed examples refer to src/steer_experiments/SAE/sae_trait_run*
 
 ### 2. RepE
 
