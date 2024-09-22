@@ -1,0 +1,934 @@
+[
+    {
+        "idx": 0,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "",
+            "Social ideology": "",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {},
+            "generative": null
+        },
+        "scores": {
+            "Agreeableness": 78.3,
+            "Conscientiousness": 72.7,
+            "Extraversion": 58.199999999999996,
+            "Neuroticism": 20.200000000000003,
+            "Openness": 77.5,
+            "Psychopathy": 42.4,
+            "Machiavellianism": 22.900000000000002,
+            "Narcissism": 32.2
+        }
+    },
+    {
+        "idx": 1,
+        "attributes": {
+            "Gender": "female",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "",
+            "Social ideology": "",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is female",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Gender": [
+                    12813,
+                    6221,
+                    4448
+                ]
+            },
+            "generative": null
+        },
+        "scores": {
+            "Agreeableness": 65.10000000000001,
+            "Conscientiousness": 54.50000000000001,
+            "Extraversion": 63.1,
+            "Neuroticism": 23.7,
+            "Openness": 72.7,
+            "Psychopathy": 68.60000000000001,
+            "Machiavellianism": 27.200000000000003,
+            "Narcissism": 39.0
+        }
+    },
+    {
+        "idx": 2,
+        "attributes": {
+            "Gender": "male",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "",
+            "Social ideology": "",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is male",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Gender": [
+                    13353,
+                    724,
+                    12221
+                ]
+            },
+            "generative": null
+        },
+        "scores": {
+            "Agreeableness": 66.7,
+            "Conscientiousness": 38.4,
+            "Extraversion": 52.900000000000006,
+            "Neuroticism": 38.3,
+            "Openness": 66.10000000000001,
+            "Psychopathy": 53.7,
+            "Machiavellianism": 31.5,
+            "Narcissism": 33.1
+        }
+    },
+    {
+        "idx": 3,
+        "attributes": {
+            "Gender": "",
+            "Age": "young",
+            "Education level": "",
+            "Socioeconomic status": "",
+            "Social ideology": "",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a young people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Age": [
+                    12352,
+                    14596
+                ]
+            },
+            "generative": null
+        },
+        "scores": {
+            "Agreeableness": 52.6,
+            "Conscientiousness": 47.099999999999994,
+            "Extraversion": 59.3,
+            "Neuroticism": 31.900000000000002,
+            "Openness": 63.5,
+            "Psychopathy": 43.8,
+            "Machiavellianism": 37.5,
+            "Narcissism": 39.300000000000004
+        }
+    },
+    {
+        "idx": 4,
+        "attributes": {
+            "Gender": "",
+            "Age": "older",
+            "Education level": "",
+            "Socioeconomic status": "",
+            "Social ideology": "",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a older people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Age": [
+                    11060
+                ]
+            },
+            "generative": null
+        },
+        "scores": {
+            "Agreeableness": 67.2,
+            "Conscientiousness": 62.5,
+            "Extraversion": 72.39999999999999,
+            "Neuroticism": 27.3,
+            "Openness": 78.8,
+            "Psychopathy": 63.5,
+            "Machiavellianism": 34.2,
+            "Narcissism": 45.1
+        }
+    },
+    {
+        "idx": 5,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "uneducated or elementary school",
+            "Socioeconomic status": "",
+            "Social ideology": "",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a uneducated or elementary school education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Education level": [
+                    11760,
+                    14423
+                ]
+            },
+            "generative": null
+        },
+        "scores": {
+            "Agreeableness": 60.5,
+            "Conscientiousness": 35.199999999999996,
+            "Extraversion": 68.8,
+            "Neuroticism": 64.2,
+            "Openness": 68.89999999999999,
+            "Psychopathy": 63.5,
+            "Machiavellianism": 45.7,
+            "Narcissism": 49.9
+        }
+    },
+    {
+        "idx": 6,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "middle school to high school",
+            "Socioeconomic status": "",
+            "Social ideology": "",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a middle school to high school education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Education level": [
+                    6030
+                ]
+            },
+            "generative": null
+        },
+        "scores": {
+            "Agreeableness": 72.0,
+            "Conscientiousness": 65.7,
+            "Extraversion": 62.4,
+            "Neuroticism": 30.4,
+            "Openness": 81.2,
+            "Psychopathy": 44.6,
+            "Machiavellianism": 30.0,
+            "Narcissism": 34.5
+        }
+    },
+    {
+        "idx": 7,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "bachelor's degree and higher",
+            "Socioeconomic status": "",
+            "Social ideology": "",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a bachelor's degree and higher education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Education level": [
+                    3956
+                ]
+            },
+            "generative": null
+        },
+        "scores": {
+            "Agreeableness": 75.3,
+            "Conscientiousness": 62.5,
+            "Extraversion": 61.4,
+            "Neuroticism": 28.000000000000004,
+            "Openness": 77.7,
+            "Psychopathy": 56.89999999999999,
+            "Machiavellianism": 23.5,
+            "Narcissism": 35.3
+        }
+    },
+    {
+        "idx": 8,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "rich",
+            "Social ideology": "",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a rich wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Socioeconomic status": [
+                    13253
+                ]
+            },
+            "generative": null
+        },
+        "scores": {
+            "Agreeableness": 69.69999999999999,
+            "Conscientiousness": 55.1,
+            "Extraversion": 64.5,
+            "Neuroticism": 34.300000000000004,
+            "Openness": 76.6,
+            "Psychopathy": 62.1,
+            "Machiavellianism": 27.6,
+            "Narcissism": 39.5
+        }
+    },
+    {
+        "idx": 9,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "poor",
+            "Social ideology": "",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a poor wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Socioeconomic status": [
+                    9602
+                ]
+            },
+            "generative": null
+        },
+        "scores": {
+            "Agreeableness": 73.2,
+            "Conscientiousness": 62.2,
+            "Extraversion": 61.199999999999996,
+            "Neuroticism": 27.800000000000004,
+            "Openness": 78.4,
+            "Psychopathy": 66.3,
+            "Machiavellianism": 33.300000000000004,
+            "Narcissism": 43.7
+        }
+    },
+    {
+        "idx": 10,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "",
+            "Social ideology": "Conservatism",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in Conservatism",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Social ideology": [
+                    5060
+                ]
+            },
+            "generative": null
+        },
+        "scores": {
+            "Agreeableness": 39.5,
+            "Conscientiousness": 39.900000000000006,
+            "Extraversion": 34.699999999999996,
+            "Neuroticism": 69.1,
+            "Openness": 33.4,
+            "Psychopathy": 39.0,
+            "Machiavellianism": 62.6,
+            "Narcissism": 51.5
+        }
+    },
+    {
+        "idx": 11,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "",
+            "Social ideology": "Liberalism",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in Liberalism",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Social ideology": [
+                    11575
+                ]
+            },
+            "generative": null
+        },
+        "scores": {
+            "Agreeableness": 54.300000000000004,
+            "Conscientiousness": 43.5,
+            "Extraversion": 64.1,
+            "Neuroticism": 52.900000000000006,
+            "Openness": 74.1,
+            "Psychopathy": 66.60000000000001,
+            "Machiavellianism": 57.199999999999996,
+            "Narcissism": 51.7
+        }
+    },
+    {
+        "idx": 12,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "",
+            "Social ideology": "Communism",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in Communism",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Social ideology": [
+                    8471
+                ]
+            },
+            "generative": null
+        },
+        "scores": {
+            "Agreeableness": 36.3,
+            "Conscientiousness": 37.8,
+            "Extraversion": 41.6,
+            "Neuroticism": 59.8,
+            "Openness": 31.4,
+            "Psychopathy": 51.9,
+            "Machiavellianism": 65.7,
+            "Narcissism": 58.599999999999994
+        }
+    },
+    {
+        "idx": 13,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "",
+            "Social ideology": "Nationalism",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in Nationalism",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Social ideology": [
+                    9303
+                ]
+            },
+            "generative": null
+        },
+        "scores": {
+            "Agreeableness": 70.89999999999999,
+            "Conscientiousness": 57.99999999999999,
+            "Extraversion": 63.3,
+            "Neuroticism": 35.8,
+            "Openness": 73.2,
+            "Psychopathy": 38.3,
+            "Machiavellianism": 29.4,
+            "Narcissism": 34.599999999999994
+        }
+    },
+    {
+        "idx": 14,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "",
+            "Social ideology": "Anarchism",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in Anarchism",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Social ideology": [
+                    16274
+                ]
+            },
+            "generative": null
+        },
+        "scores": {
+            "Agreeableness": 75.2,
+            "Conscientiousness": 60.099999999999994,
+            "Extraversion": 57.49999999999999,
+            "Neuroticism": 33.1,
+            "Openness": 70.39999999999999,
+            "Psychopathy": 30.5,
+            "Machiavellianism": 20.5,
+            "Narcissism": 30.3
+        }
+    },
+    {
+        "idx": 15,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "",
+            "Social ideology": "Fascism",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in Fascism",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Social ideology": [
+                    16193
+                ]
+            },
+            "generative": null
+        },
+        "scores": {
+            "Agreeableness": 76.0,
+            "Conscientiousness": 66.9,
+            "Extraversion": 62.0,
+            "Neuroticism": 26.3,
+            "Openness": 77.5,
+            "Psychopathy": 46.6,
+            "Machiavellianism": 22.900000000000002,
+            "Narcissism": 34.1
+        }
+    },
+    {
+        "idx": 16,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "",
+            "Social ideology": "",
+            "Emotional intelligence": "stable",
+            "Professional commitment": "",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an  stable person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Emotional intelligence": [
+                    15836
+                ]
+            },
+            "generative": null
+        },
+        "scores": {
+            "Agreeableness": 76.3,
+            "Conscientiousness": 66.7,
+            "Extraversion": 64.1,
+            "Neuroticism": 31.1,
+            "Openness": 80.10000000000001,
+            "Psychopathy": 60.0,
+            "Machiavellianism": 27.400000000000002,
+            "Narcissism": 37.0
+        }
+    },
+    {
+        "idx": 17,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "",
+            "Social ideology": "",
+            "Emotional intelligence": "volatile",
+            "Professional commitment": "",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an  volatile person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Emotional intelligence": [
+                    10774,
+                    10418,
+                    6503
+                ]
+            },
+            "generative": null
+        },
+        "scores": {
+            "Agreeableness": 81.6,
+            "Conscientiousness": 55.300000000000004,
+            "Extraversion": 55.00000000000001,
+            "Neuroticism": 37.2,
+            "Openness": 70.89999999999999,
+            "Psychopathy": 36.5,
+            "Machiavellianism": 26.900000000000002,
+            "Narcissism": 29.599999999999998
+        }
+    },
+    {
+        "idx": 18,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "",
+            "Social ideology": "",
+            "Emotional intelligence": "",
+            "Professional commitment": "initiative",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is initiative",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Professional commitment": [
+                    371,
+                    13659
+                ]
+            },
+            "generative": null
+        },
+        "scores": {
+            "Agreeableness": 75.2,
+            "Conscientiousness": 63.9,
+            "Extraversion": 61.199999999999996,
+            "Neuroticism": 27.900000000000002,
+            "Openness": 79.60000000000001,
+            "Psychopathy": 40.0,
+            "Machiavellianism": 21.099999999999998,
+            "Narcissism": 26.1
+        }
+    },
+    {
+        "idx": 19,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "",
+            "Social ideology": "",
+            "Emotional intelligence": "",
+            "Professional commitment": "inactive",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is inactive",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Professional commitment": [
+                    14356,
+                    9466
+                ]
+            },
+            "generative": null
+        },
+        "scores": {
+            "Agreeableness": 56.49999999999999,
+            "Conscientiousness": 51.5,
+            "Extraversion": 54.2,
+            "Neuroticism": 32.800000000000004,
+            "Openness": 58.699999999999996,
+            "Psychopathy": 63.6,
+            "Machiavellianism": 31.1,
+            "Narcissism": 36.1
+        }
+    },
+    {
+        "idx": 20,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "",
+            "Social ideology": "",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": "relaxed"
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is relaxed"
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Family background": [
+                    7140,
+                    16264
+                ]
+            },
+            "generative": null
+        },
+        "scores": {
+            "Agreeableness": 25.8,
+            "Conscientiousness": 41.3,
+            "Extraversion": 38.6,
+            "Neuroticism": 63.7,
+            "Openness": 25.5,
+            "Psychopathy": 53.5,
+            "Machiavellianism": 66.2,
+            "Narcissism": 57.3
+        }
+    },
+    {
+        "idx": 21,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "",
+            "Social ideology": "",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": "strained"
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is strained"
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Family background": [
+                    10055,
+                    5030
+                ]
+            },
+            "generative": null
+        },
+        "scores": {
+            "Agreeableness": 60.6,
+            "Conscientiousness": 40.699999999999996,
+            "Extraversion": 61.3,
+            "Neuroticism": 31.8,
+            "Openness": 71.2,
+            "Psychopathy": 59.3,
+            "Machiavellianism": 38.7,
+            "Narcissism": 47.0
+        }
+    }
+]
