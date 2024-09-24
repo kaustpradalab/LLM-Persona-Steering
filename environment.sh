@@ -47,3 +47,6 @@ unset http_proxy && unset https_proxy
 du -sh /tmp/
 du -sh /root/.cache && rm -rf /root/.cache
 du -sh /root/.local/share/Trash && rm -rf /root/.local/share/Trash 
+
+
+source ~/.bashrc

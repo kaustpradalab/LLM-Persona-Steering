@@ -1,0 +1,202 @@
+[
+    {
+        "idx": 16,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "",
+            "Social ideology": "",
+            "Emotional intelligence": "stable",
+            "Professional commitment": "",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an  stable person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Emotional intelligence": [
+                    95973,
+                    74779
+                ]
+            },
+            "generative": null
+        }
+    },
+    {
+        "idx": 17,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "",
+            "Social ideology": "",
+            "Emotional intelligence": "volatile",
+            "Professional commitment": "",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an  volatile person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Emotional intelligence": [
+                    82676,
+                    17689,
+                    64525
+                ]
+            },
+            "generative": null
+        }
+    },
+    {
+        "idx": 18,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "",
+            "Social ideology": "",
+            "Emotional intelligence": "",
+            "Professional commitment": "initiative",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is initiative",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Professional commitment": [
+                    79208,
+                    114268
+                ]
+            },
+            "generative": null
+        }
+    },
+    {
+        "idx": 19,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "",
+            "Social ideology": "",
+            "Emotional intelligence": "",
+            "Professional commitment": "inactive",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is inactive",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Professional commitment": [
+                    87888,
+                    89938
+                ]
+            },
+            "generative": null
+        }
+    },
+    {
+        "idx": 20,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "",
+            "Social ideology": "",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": "relaxed"
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is relaxed"
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Family background": [
+                    105115,
+                    40350
+                ]
+            },
+            "generative": null
+        }
+    },
+    {
+        "idx": 21,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "",
+            "Social ideology": "",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": "strained"
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is strained"
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Family background": [
+                    93006,
+                    53178,
+                    33570
+                ]
+            },
+            "generative": null
+        }
+    }
+]

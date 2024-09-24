@@ -11,14 +11,8 @@ python SAE/sae_run.py \
     --freq_penalty 1 \
     --bg_type fixed \
     --steer_mode \
-    --steer_file_path ../data/SAE/bg_features/full/gemma-2-9b-it.json \
+    --steer_file_path ../data/SAE/bg_features/full_split/gemma-2-9b-it_0_5.json \
     --prompt_type 1 \
     --inference_type chat \
     --save_dir_path ../data/SAE/steer_result/full/gemma-2-9b-it_origin \
     --testset TRAIT
-
-python SAE/analysis_origin.py \
-    --save_path ../data/SAE/steer_result/full/gemma-2-9b-it_origin \
-    --prompt_type 1 \
-    --model_name gemma-2-9b-it \
-    --bg_features ../data/SAE/bg_features/full
