@@ -89,9 +89,9 @@ python SAE/convert_to_features.py \
     --layer 31
 
 python SAE/convert_to_features.py \
-    --save_path ../data/SAE/bg_features/safety_split/gemma-2-9b-it_6_10.json \
+    --save_path ../data/SAE/bg_features/safety_split/gemma-2-9b-it_6_11.json \
     --pattern_path ../data/SAE/features_patterns/gemma-2-9b-it.json \
-    --background ../data/SAE/background/background_full_safety_split/background_full_safety_6_10.json \
+    --background ../data/SAE/background/background_full_safety_split/background_full_safety_6_11.json \
     --layer 31
 
 

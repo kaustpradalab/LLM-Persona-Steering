@@ -4,6 +4,34 @@
         "attributes": {
             "Gender": "",
             "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "",
+            "Social ideology": "",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {},
+            "generative": null
+        }
+    },
+    {
+        "idx": 1,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
             "Education level": "uneducated or elementary school",
             "Socioeconomic status": "",
             "Social ideology": "",
@@ -33,7 +61,7 @@
         }
     },
     {
-        "idx": 1,
+        "idx": 2,
         "attributes": {
             "Gender": "",
             "Age": "",
@@ -66,7 +94,7 @@
         }
     },
     {
-        "idx": 2,
+        "idx": 3,
         "attributes": {
             "Gender": "",
             "Age": "",
@@ -99,7 +127,7 @@
         }
     },
     {
-        "idx": 3,
+        "idx": 4,
         "attributes": {
             "Gender": "",
             "Age": "",
@@ -132,7 +160,7 @@
         }
     },
     {
-        "idx": 4,
+        "idx": 5,
         "attributes": {
             "Gender": "",
             "Age": "",
@@ -159,39 +187,6 @@
                 "Social ideology": [
                     15204,
                     100842
-                ]
-            },
-            "generative": null
-        }
-    },
-    {
-        "idx": 5,
-        "attributes": {
-            "Gender": "",
-            "Age": "",
-            "Education level": "",
-            "Socioeconomic status": "",
-            "Social ideology": "Nationalism",
-            "Emotional intelligence": "",
-            "Professional commitment": "",
-            "Family background": ""
-        },
-        "fixed_bg": {
-            "Gender": "your gender is ",
-            "Age": "you are a  people",
-            "Education level": "you have a  education level",
-            "Socioeconomic status": "you come from a  wealth status background",
-            "Social ideology": "you hold strong beliefs in Nationalism",
-            "Emotional intelligence": "You're an   person",
-            "Professional commitment": "you show your professional commitment as someone who is ",
-            "Family background": "your family relationship is "
-        },
-        "generative_bg": "",
-        "features": {
-            "fixed": {
-                "Social ideology": [
-                    93356,
-                    121777
                 ]
             },
             "generative": null

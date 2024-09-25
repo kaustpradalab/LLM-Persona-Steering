@@ -6,6 +6,30 @@
             "Age": "",
             "Education level": "",
             "Socioeconomic status": "",
+            "Social ideology": "Nationalism",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in Nationalism",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": ""
+    },
+    {
+        "idx": 7,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "",
             "Social ideology": "Anarchism",
             "Emotional intelligence": "",
             "Professional commitment": "",
@@ -24,7 +48,7 @@
         "generative_bg": ""
     },
     {
-        "idx": 7,
+        "idx": 8,
         "attributes": {
             "Gender": "",
             "Age": "",
@@ -48,7 +72,7 @@
         "generative_bg": ""
     },
     {
-        "idx": 8,
+        "idx": 9,
         "attributes": {
             "Gender": "",
             "Age": "",
@@ -72,7 +96,7 @@
         "generative_bg": ""
     },
     {
-        "idx": 9,
+        "idx": 10,
         "attributes": {
             "Gender": "",
             "Age": "",
@@ -96,7 +120,7 @@
         "generative_bg": ""
     },
     {
-        "idx": 10,
+        "idx": 11,
         "attributes": {
             "Gender": "",
             "Age": "",
