@@ -18,12 +18,6 @@ def get_likelihood(model, input_ids, device):
     logits = outputs[:, -1, :]  # Logits for the last token
     probabilities = torch.softmax(logits, dim=-1)
     return probabilities
-    
-def get_likelihood_steer(input_ids, model, layer, coeff, steering_vectors, steering_on, sampling_kwargs, seed=None):
-    model.reset_hooks()
-    steering_hook = create_steering_hook(coeff, steering_vectors, steering_on)
-    editing_hooks = [(f"blocks.{layer}.hook_resid_post", steering_hook)]
-    return hooked_generate(model, input_ids, editing_hooks, seed=seed, **sampling_kwargs)
 
 def get_args():
     parser = argparse.ArgumentParser()

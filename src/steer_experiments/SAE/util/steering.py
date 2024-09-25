@@ -38,7 +38,7 @@ def create_steering_hook(coeff, steering_vectors, steering_on):
                 resid_pre[:, :position - 1, :] += coeff * steering_vector
     return steering_hook
 
-def hooked_generate(model, input_ids, fwd_hooks=[], seed=None, **kwargs):
+def hooked_logit(model, input_ids, fwd_hooks=[], seed=None, **kwargs):
     if seed is not None:
         torch.manual_seed(seed)
     with model.hooks(fwd_hooks=fwd_hooks):
@@ -47,6 +47,25 @@ def hooked_generate(model, input_ids, fwd_hooks=[], seed=None, **kwargs):
         logits = outputs[:, -1, :]  # Logits for the last token
         probabilities = torch.softmax(logits, dim=-1)
     return probabilities
+
+def get_likelihood_steer(input_ids, model, layer, coeff, steering_vectors, steering_on, sampling_kwargs, seed=None):
+    model.reset_hooks()
+    steering_hook = create_steering_hook(coeff, steering_vectors, steering_on)
+    editing_hooks = [(f"blocks.{layer}.hook_resid_post", steering_hook)]
+    return hooked_logit(model, input_ids, editing_hooks, seed=seed, **sampling_kwargs)
+
+def hooked_generate(model, inputs, fwd_hooks=[], seed=None, **kwargs):
+    if seed is not None:
+        torch.manual_seed(seed)
+    with model.hooks(fwd_hooks=fwd_hooks):
+        outputs = model.generate(**inputs, do_sample=False, max_new_tokens=64, min_new_tokens=2, stop_at_eos=False, **kwargs)
+    return outputs
+
+def get_likelihood_generate(inputs, model, layer, coeff, steering_vectors, steering_on, sampling_kwargs, seed=None):
+    model.reset_hooks()
+    steering_hook = create_steering_hook(coeff, steering_vectors, steering_on)
+    editing_hooks = [(f"blocks.{layer}.hook_resid_post", steering_hook)]
+    return hooked_generate(model, inputs, editing_hooks, seed=seed, **sampling_kwargs)
     
 def get_steer_vectors(sae, bg_type, features):
     if bg_type == "fixed":
