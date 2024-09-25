@@ -7,6 +7,7 @@ Generate an English speaker, each represented by a distinct combination of the f
 6. emotional intelligence (stable, volatile),
 7. professional commitment (initiative, inactive),
 8. family background (relaxed, strained)
+9. AI familiar degree (familiar, unfamiliar)
 
 Ensure Diversity and Rationality across these dimensions, including both positive and challenging aspects. Avoid favoring overly positive or idealized scenarios; instead, create varied and rational combinations that reflect the complexity of human experiences.
 ##
@@ -30,6 +31,8 @@ Professional commitment:
 Life satisfaction:
 
 Family background:
+
+AI familiar degree:
 
 Just Output response in JSON format where each key corresponds to a dimension.
 ##

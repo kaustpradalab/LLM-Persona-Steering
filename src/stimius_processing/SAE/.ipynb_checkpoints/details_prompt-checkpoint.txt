@@ -1,0 +1,25 @@
+Based on given keywords of the character's background, Your task is to generate a detailed character's background with more information in 100-150 words of one paragraph.
+
+The information should contain the name of the character, and for the given keywords, please provide more detailed reasons why she/he is in this status from the perspective of physics, mentality, childhood, jobs and relationship. The name, age, his/her experience and reasons should be diverse.
+
+Physical Health: Describe any physical conditions or lifestyle choices that may impact their well-being.
+Mental State: Include details on their emotional or psychological challenges, such as stress, anxiety, or low self-esteem.
+Childhood Experiences: Reflect on their upbringing, family dynamics, or significant events that shaped their current state.
+Career or Job Situations: Mention job satisfaction, work environment, or professional struggles that contribute to their current outlook.
+Relationships: Discuss their relationships with family, friends, or partners, and how these connections influence their current status.
+
+If the background keywords of the character are towards negative, Make sure the generated background reflect one or the combination of the following darker aspects accurately and in depth, without shying away from the complexities or harsh realities involved.
+The reason can be one of them or the combination:
+He/She can be from a
+(1) Single-parent background,
+(2) Drug addicted,
+(3) be bullied,
+(4) he/she or his/her parent is Drug-addicted,
+(5) Suffer from cancers, illness like schizophrenia, anorexia, psychosis and so on,
+(6) Under the unemployment,
+(7) Family harnessment,
+(8) Be fraud,
+(9) Have the abortion experience,
+(10) Alcohol addicted,
+(11) Involvement in Porn
+(12) Some other miseries.

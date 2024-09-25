@@ -1,0 +1,114 @@
+[
+    {
+        "Layer": 31,
+        "size": 131072,
+        "Details": {
+            "Gender": {
+                "female": {
+                    "words that refer to women and their experiences": 96637
+                },
+                "male": {
+                    "references to male individuals or characteristics": 114317
+                }
+            },
+            "Age": {
+                "young": {
+                    "references to youth or young individuals": 108854,
+                    "mentions of young individuals or characters": 38588
+                },
+                "older": {
+                    "references to elderly individuals": 127044,
+                    "terms related to senior and elderly populations": 31626
+                }
+            },
+            "Education level": {
+                "bachelor's degree and higher": {
+                    "references to graduate education and related terms": 21439,
+                    "references to educational qualifications and academic achievements": 85771
+                },
+                "middle school to high school": {
+                    "references to middle and junior high school educational contexts": 22329
+                },
+                "uneducated or elementary school": {
+                    "references to ignorance and lack of knowledge": 8744,
+                    "phrases related to dropping out or withdrawal from educational or professional contexts": 76612
+                }
+            },
+            "Socioeconomic status": {
+                "poor": {
+                    "terms related to poverty and social inequality": 81363,
+                    "phrases related to economic struggle and financial hardship": 53333
+                },
+                "rich": {
+                    "references to wealthy individuals and their characteristics": 10022,
+                    "terms related to economic success and well-being": 1739
+                }
+            },
+            "Social ideology": {
+                "Conservatism": {
+                    "mentions of conservative ideology or related terms": 30812,
+                    "references to conservative political figures and themes": 38950
+                },
+                "Liberalism": {
+                    "references to the term \"liberal\" and its variations in political contexts": 27079,
+                    "references to political parties and figures associated with liberal ideologies": 25357
+                },
+                "Nationalism": {
+                    "expressions related to patriotism and national identity": 93356,
+                    "references to nationalism and cultural identity, particularly related to German unification and ethnic identity": 121777
+                },
+                "Anarchism": {
+                    "references to anarchist movements and related organizations": 64303,
+                    "references to chaos and disorder in society and its implications": 47787
+                },
+                "Communism": {
+                    "references to Marxist-Leninist ideology and figures associated with it": 15204,
+                    "terms related to communism and communist ideology": 100842
+                },
+                "Fascism": {
+                    "references to Nazi Germany and associated events or ideologies": 52109
+                }
+            },
+            "Emotional intelligence": {
+                "stable": {
+                    "references to mental health and well-being": 95973,
+                    "expressions related to emotional restraint and composure in difficult situations": 74779
+                },
+                "volatile": {
+                    "expressions of feeling overwhelmed or the concept of being overwhelmed": 82676,
+                    "words associated with anger and aggressive emotions": 17689,
+                    "expressions of nervousness or anxiety": 64525
+                }
+            },
+            "Professional commitment": {
+                "initiative": {
+                    "mentions of dedication or commitment towards a cause or project": 79208,
+                    "terms related to proactive behavior or approaches": 114268
+                },
+                "inactive": {
+                    "phrases indicating lack of effort or commitment": 87888,
+                    "expressions indicating laziness or a lack of motivation": 89938
+                }
+            },
+            "Family background": {
+                "relaxed": {
+                    "themes of unity and togetherness": 105115,
+                    "references to harmony and harmonious relationships": 40350
+                },
+                "strained": {
+                    "instances of conflict or division among groups or individuals": 93006,
+                    "associated factors regarding mental health and childhood experiences": 53178,
+                    "terms related to violence and abuse, particularly in the context of domestic and sexual violence": 33570
+                }
+            },
+            "AI familiar degree": {
+                "familiar": {
+                    "instances of artificial intelligence and related terms": 97864,
+                    "mentions of experts and expert opinions in a variety of contexts": 25796,
+                    "references to artificial intelligence and its applications": 15126,
+                    "terms related to artificial intelligence and machine learning": 9911
+                }
+            }
+        }
+    }
+]

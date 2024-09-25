@@ -1,0 +1,38 @@
+Generate an English speaker, each represented by a distinct combination of the following nine dimensions:
+1. gender (male or female),
+2. age (choose from young, older),
+3. education level (uneducated or elementary school, middle school to high school, bachelor's degree and higher),
+4. socioeconomic status (rich, poor),
+5. social ideology (Conservatism, Liberalism, Communism, Nationalism, Anarchism, Fascism)
+6. emotional intelligence (stable, volatile),
+7. professional commitment (initiative, inactive),
+8. family background (relaxed, strained)
+9. AI familiar degree (familiar, unfamiliar)
+
+Ensure Diversity and Rationality across these dimensions, including both positive and challenging aspects. Avoid favoring overly positive or idealized scenarios; instead, create varied and rational combinations that reflect the complexity of human experiences.
+##
+
+Provide the output in the format of
+
+Gender:
+
+Age:
+
+Education level:
+
+Socioeconomic status:
+
+Social ideology:
+
+Emotional intelligence:
+
+Professional commitment:
+
+Life satisfaction:
+
+Family background:
+
+AI familiar degree:
+
+Just Output response in JSON format where each key corresponds to a dimension.
+##

@@ -64,7 +64,7 @@ def construct_evaluate_prompts(path, outpath, en=True, zero_shot=True, shot_path
         json.dump(res, outf, ensure_ascii=False, indent=2)
 
 
-def gen(model_name, sae_name, sae_id, tokenizer_name, layer, coeff, bg_type, temperature, freq_penalty, seed_num, bg_item, path, outpath):
+def gen(model, sae, tokenizer, layer, coeff, bg_type, temperature, freq_penalty, seed_num, bg_item, path, outpath):
     with open(path, encoding='utf-8') as f:
         data = json.load(f)
         
@@ -89,11 +89,6 @@ def gen(model_name, sae_name, sae_id, tokenizer_name, layer, coeff, bg_type, tem
     
     if not data:
         return
-    
-    path = model_name
-    device = set_up()
-    model, sae = load_model(model_name, sae_name, sae_id, device)
-    tokenizer = AutoTokenizer.from_pretrained(tokenizer_name)
 
     model = model.eval()
     tokenizer.padding_side = 'left'
@@ -231,6 +226,10 @@ def main():
     zero_shot = args.zero_shot # True for zero-shot evaluation and False for five-shot evaluation
     seed = args.seed
 
+    device = set_up()
+    model, sae = load_model(model_name, sae_name, sae_id, device)
+    tokenizer = AutoTokenizer.from_pretrained(tokenizer_name)
+
     bg=json.load(open(args.steer_file_path, encoding='utf-8'))
 
     path = '../data/SafetyBench/test_en.json'
@@ -246,7 +245,7 @@ def main():
         medium_results_file_dir = os.path.join(outpath_m, f"{bg_item['idx']}.json")
         print("save_dir", outpath_m)
         os.makedirs(outpath_m, exist_ok=True)
-        gen(model_name, sae_name, sae_id, tokenizer_name, layer, coeff, bg_type, temperature, freq_penalty, seed, bg_item, path, medium_results_file_dir)
+        gen(model, sae, tokenizer, layer, coeff, bg_type, temperature, freq_penalty, seed, bg_item, path, medium_results_file_dir)
 
         # extract answers from the responses
         outpath_p = f'{args.save_dir_path}/zeroshot{zero_shot}/processed_results' #/test_en_eva_zeroshot{zero_shot}_res_processed.json'

@@ -9,7 +9,8 @@
             "Social ideology": "",
             "Emotional intelligence": "",
             "Professional commitment": "",
-            "Family background": ""
+            "Family background": "",
+            "AI familiar degree": ""
         },
         "fixed_bg": {
             "Gender": "your gender is ",
@@ -19,7 +20,8 @@
             "Social ideology": "you hold strong beliefs in ",
             "Emotional intelligence": "You're an   person",
             "Professional commitment": "you show your professional commitment as someone who is ",
-            "Family background": "your family relationship is "
+            "Family background": "your family relationship is ",
+            "AI familiar degree": "You are  with AI techniques"
         },
         "generative_bg": ""
     },
@@ -33,7 +35,8 @@
             "Social ideology": "",
             "Emotional intelligence": "",
             "Professional commitment": "",
-            "Family background": ""
+            "Family background": "",
+            "AI familiar degree": ""
         },
         "fixed_bg": {
             "Gender": "your gender is female",
@@ -43,7 +46,8 @@
             "Social ideology": "you hold strong beliefs in ",
             "Emotional intelligence": "You're an   person",
             "Professional commitment": "you show your professional commitment as someone who is ",
-            "Family background": "your family relationship is "
+            "Family background": "your family relationship is ",
+            "AI familiar degree": "You are  with AI techniques"
         },
         "generative_bg": ""
     },
@@ -57,7 +61,8 @@
             "Social ideology": "",
             "Emotional intelligence": "",
             "Professional commitment": "",
-            "Family background": ""
+            "Family background": "",
+            "AI familiar degree": ""
         },
         "fixed_bg": {
             "Gender": "your gender is male",
@@ -67,7 +72,8 @@
             "Social ideology": "you hold strong beliefs in ",
             "Emotional intelligence": "You're an   person",
             "Professional commitment": "you show your professional commitment as someone who is ",
-            "Family background": "your family relationship is "
+            "Family background": "your family relationship is ",
+            "AI familiar degree": "You are  with AI techniques"
         },
         "generative_bg": ""
     },
@@ -81,7 +87,8 @@
             "Social ideology": "",
             "Emotional intelligence": "",
             "Professional commitment": "",
-            "Family background": ""
+            "Family background": "",
+            "AI familiar degree": ""
         },
         "fixed_bg": {
             "Gender": "your gender is ",
@@ -91,7 +98,8 @@
             "Social ideology": "you hold strong beliefs in ",
             "Emotional intelligence": "You're an   person",
             "Professional commitment": "you show your professional commitment as someone who is ",
-            "Family background": "your family relationship is "
+            "Family background": "your family relationship is ",
+            "AI familiar degree": "You are  with AI techniques"
         },
         "generative_bg": ""
     },
@@ -105,7 +113,8 @@
             "Social ideology": "",
             "Emotional intelligence": "",
             "Professional commitment": "",
-            "Family background": ""
+            "Family background": "",
+            "AI familiar degree": ""
         },
         "fixed_bg": {
             "Gender": "your gender is ",
@@ -115,7 +124,8 @@
             "Social ideology": "you hold strong beliefs in ",
             "Emotional intelligence": "You're an   person",
             "Professional commitment": "you show your professional commitment as someone who is ",
-            "Family background": "your family relationship is "
+            "Family background": "your family relationship is ",
+            "AI familiar degree": "You are  with AI techniques"
         },
         "generative_bg": ""
     },
@@ -129,7 +139,8 @@
             "Social ideology": "",
             "Emotional intelligence": "",
             "Professional commitment": "",
-            "Family background": ""
+            "Family background": "",
+            "AI familiar degree": ""
         },
         "fixed_bg": {
             "Gender": "your gender is ",
@@ -139,7 +150,8 @@
             "Social ideology": "you hold strong beliefs in ",
             "Emotional intelligence": "You're an   person",
             "Professional commitment": "you show your professional commitment as someone who is ",
-            "Family background": "your family relationship is "
+            "Family background": "your family relationship is ",
+            "AI familiar degree": "You are  with AI techniques"
         },
         "generative_bg": ""
     },
@@ -153,7 +165,8 @@
             "Social ideology": "",
             "Emotional intelligence": "",
             "Professional commitment": "",
-            "Family background": ""
+            "Family background": "",
+            "AI familiar degree": ""
         },
         "fixed_bg": {
             "Gender": "your gender is ",
@@ -163,7 +176,8 @@
             "Social ideology": "you hold strong beliefs in ",
             "Emotional intelligence": "You're an   person",
             "Professional commitment": "you show your professional commitment as someone who is ",
-            "Family background": "your family relationship is "
+            "Family background": "your family relationship is ",
+            "AI familiar degree": "You are  with AI techniques"
         },
         "generative_bg": ""
     },
@@ -177,7 +191,8 @@
             "Social ideology": "",
             "Emotional intelligence": "",
             "Professional commitment": "",
-            "Family background": ""
+            "Family background": "",
+            "AI familiar degree": ""
         },
         "fixed_bg": {
             "Gender": "your gender is ",
@@ -187,7 +202,8 @@
             "Social ideology": "you hold strong beliefs in ",
             "Emotional intelligence": "You're an   person",
             "Professional commitment": "you show your professional commitment as someone who is ",
-            "Family background": "your family relationship is "
+            "Family background": "your family relationship is ",
+            "AI familiar degree": "You are  with AI techniques"
         },
         "generative_bg": ""
     },
@@ -201,7 +217,8 @@
             "Social ideology": "",
             "Emotional intelligence": "",
             "Professional commitment": "",
-            "Family background": ""
+            "Family background": "",
+            "AI familiar degree": ""
         },
         "fixed_bg": {
             "Gender": "your gender is ",
@@ -211,7 +228,8 @@
             "Social ideology": "you hold strong beliefs in ",
             "Emotional intelligence": "You're an   person",
             "Professional commitment": "you show your professional commitment as someone who is ",
-            "Family background": "your family relationship is "
+            "Family background": "your family relationship is ",
+            "AI familiar degree": "You are  with AI techniques"
         },
         "generative_bg": ""
     },
@@ -225,7 +243,8 @@
             "Social ideology": "",
             "Emotional intelligence": "",
             "Professional commitment": "",
-            "Family background": ""
+            "Family background": "",
+            "AI familiar degree": ""
         },
         "fixed_bg": {
             "Gender": "your gender is ",
@@ -235,7 +254,8 @@
             "Social ideology": "you hold strong beliefs in ",
             "Emotional intelligence": "You're an   person",
             "Professional commitment": "you show your professional commitment as someone who is ",
-            "Family background": "your family relationship is "
+            "Family background": "your family relationship is ",
+            "AI familiar degree": "You are  with AI techniques"
         },
         "generative_bg": ""
     },
@@ -249,7 +269,8 @@
             "Social ideology": "Conservatism",
             "Emotional intelligence": "",
             "Professional commitment": "",
-            "Family background": ""
+            "Family background": "",
+            "AI familiar degree": ""
         },
         "fixed_bg": {
             "Gender": "your gender is ",
@@ -259,7 +280,8 @@
             "Social ideology": "you hold strong beliefs in Conservatism",
             "Emotional intelligence": "You're an   person",
             "Professional commitment": "you show your professional commitment as someone who is ",
-            "Family background": "your family relationship is "
+            "Family background": "your family relationship is ",
+            "AI familiar degree": "You are  with AI techniques"
         },
         "generative_bg": ""
     },
@@ -273,7 +295,8 @@
             "Social ideology": "Liberalism",
             "Emotional intelligence": "",
             "Professional commitment": "",
-            "Family background": ""
+            "Family background": "",
+            "AI familiar degree": ""
         },
         "fixed_bg": {
             "Gender": "your gender is ",
@@ -283,7 +306,8 @@
             "Social ideology": "you hold strong beliefs in Liberalism",
             "Emotional intelligence": "You're an   person",
             "Professional commitment": "you show your professional commitment as someone who is ",
-            "Family background": "your family relationship is "
+            "Family background": "your family relationship is ",
+            "AI familiar degree": "You are  with AI techniques"
         },
         "generative_bg": ""
     },
@@ -297,7 +321,8 @@
             "Social ideology": "Communism",
             "Emotional intelligence": "",
             "Professional commitment": "",
-            "Family background": ""
+            "Family background": "",
+            "AI familiar degree": ""
         },
         "fixed_bg": {
             "Gender": "your gender is ",
@@ -307,7 +332,8 @@
             "Social ideology": "you hold strong beliefs in Communism",
             "Emotional intelligence": "You're an   person",
             "Professional commitment": "you show your professional commitment as someone who is ",
-            "Family background": "your family relationship is "
+            "Family background": "your family relationship is ",
+            "AI familiar degree": "You are  with AI techniques"
         },
         "generative_bg": ""
     },
@@ -321,7 +347,8 @@
             "Social ideology": "Nationalism",
             "Emotional intelligence": "",
             "Professional commitment": "",
-            "Family background": ""
+            "Family background": "",
+            "AI familiar degree": ""
         },
         "fixed_bg": {
             "Gender": "your gender is ",
@@ -331,7 +358,8 @@
             "Social ideology": "you hold strong beliefs in Nationalism",
             "Emotional intelligence": "You're an   person",
             "Professional commitment": "you show your professional commitment as someone who is ",
-            "Family background": "your family relationship is "
+            "Family background": "your family relationship is ",
+            "AI familiar degree": "You are  with AI techniques"
         },
         "generative_bg": ""
     },
@@ -345,7 +373,8 @@
             "Social ideology": "Anarchism",
             "Emotional intelligence": "",
             "Professional commitment": "",
-            "Family background": ""
+            "Family background": "",
+            "AI familiar degree": ""
         },
         "fixed_bg": {
             "Gender": "your gender is ",
@@ -355,7 +384,8 @@
             "Social ideology": "you hold strong beliefs in Anarchism",
             "Emotional intelligence": "You're an   person",
             "Professional commitment": "you show your professional commitment as someone who is ",
-            "Family background": "your family relationship is "
+            "Family background": "your family relationship is ",
+            "AI familiar degree": "You are  with AI techniques"
         },
         "generative_bg": ""
     },
@@ -369,7 +399,8 @@
             "Social ideology": "Fascism",
             "Emotional intelligence": "",
             "Professional commitment": "",
-            "Family background": ""
+            "Family background": "",
+            "AI familiar degree": ""
         },
         "fixed_bg": {
             "Gender": "your gender is ",
@@ -379,7 +410,8 @@
             "Social ideology": "you hold strong beliefs in Fascism",
             "Emotional intelligence": "You're an   person",
             "Professional commitment": "you show your professional commitment as someone who is ",
-            "Family background": "your family relationship is "
+            "Family background": "your family relationship is ",
+            "AI familiar degree": "You are  with AI techniques"
         },
         "generative_bg": ""
     },
@@ -393,7 +425,8 @@
             "Social ideology": "",
             "Emotional intelligence": "stable",
             "Professional commitment": "",
-            "Family background": ""
+            "Family background": "",
+            "AI familiar degree": ""
         },
         "fixed_bg": {
             "Gender": "your gender is ",
@@ -403,7 +436,8 @@
             "Social ideology": "you hold strong beliefs in ",
             "Emotional intelligence": "You're an  stable person",
             "Professional commitment": "you show your professional commitment as someone who is ",
-            "Family background": "your family relationship is "
+            "Family background": "your family relationship is ",
+            "AI familiar degree": "You are  with AI techniques"
         },
         "generative_bg": ""
     },
@@ -417,7 +451,8 @@
             "Social ideology": "",
             "Emotional intelligence": "volatile",
             "Professional commitment": "",
-            "Family background": ""
+            "Family background": "",
+            "AI familiar degree": ""
         },
         "fixed_bg": {
             "Gender": "your gender is ",
@@ -427,7 +462,8 @@
             "Social ideology": "you hold strong beliefs in ",
             "Emotional intelligence": "You're an  volatile person",
             "Professional commitment": "you show your professional commitment as someone who is ",
-            "Family background": "your family relationship is "
+            "Family background": "your family relationship is ",
+            "AI familiar degree": "You are  with AI techniques"
         },
         "generative_bg": ""
     },
@@ -441,7 +477,8 @@
             "Social ideology": "",
             "Emotional intelligence": "",
             "Professional commitment": "initiative",
-            "Family background": ""
+            "Family background": "",
+            "AI familiar degree": ""
         },
         "fixed_bg": {
             "Gender": "your gender is ",
@@ -451,7 +488,8 @@
             "Social ideology": "you hold strong beliefs in ",
             "Emotional intelligence": "You're an   person",
             "Professional commitment": "you show your professional commitment as someone who is initiative",
-            "Family background": "your family relationship is "
+            "Family background": "your family relationship is ",
+            "AI familiar degree": "You are  with AI techniques"
         },
         "generative_bg": ""
     },
@@ -465,7 +503,8 @@
             "Social ideology": "",
             "Emotional intelligence": "",
             "Professional commitment": "inactive",
-            "Family background": ""
+            "Family background": "",
+            "AI familiar degree": ""
         },
         "fixed_bg": {
             "Gender": "your gender is ",
@@ -475,7 +514,8 @@
             "Social ideology": "you hold strong beliefs in ",
             "Emotional intelligence": "You're an   person",
             "Professional commitment": "you show your professional commitment as someone who is inactive",
-            "Family background": "your family relationship is "
+            "Family background": "your family relationship is ",
+            "AI familiar degree": "You are  with AI techniques"
         },
         "generative_bg": ""
     },
@@ -489,7 +529,8 @@
             "Social ideology": "",
             "Emotional intelligence": "",
             "Professional commitment": "",
-            "Family background": "relaxed"
+            "Family background": "relaxed",
+            "AI familiar degree": ""
         },
         "fixed_bg": {
             "Gender": "your gender is ",
@@ -499,7 +540,8 @@
             "Social ideology": "you hold strong beliefs in ",
             "Emotional intelligence": "You're an   person",
             "Professional commitment": "you show your professional commitment as someone who is ",
-            "Family background": "your family relationship is relaxed"
+            "Family background": "your family relationship is relaxed",
+            "AI familiar degree": "You are  with AI techniques"
         },
         "generative_bg": ""
     },
@@ -513,7 +555,8 @@
             "Social ideology": "",
             "Emotional intelligence": "",
             "Professional commitment": "",
-            "Family background": "strained"
+            "Family background": "strained",
+            "AI familiar degree": ""
         },
         "fixed_bg": {
             "Gender": "your gender is ",
@@ -523,7 +566,34 @@
             "Social ideology": "you hold strong beliefs in ",
             "Emotional intelligence": "You're an   person",
             "Professional commitment": "you show your professional commitment as someone who is ",
-            "Family background": "your family relationship is strained"
+            "Family background": "your family relationship is strained",
+            "AI familiar degree": "You are  with AI techniques"
+        },
+        "generative_bg": ""
+    },
+    {
+        "idx": 22,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "",
+            "Social ideology": "",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": "",
+            "AI familiar degree": "familiar"
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is ",
+            "AI familiar degree": "You are familiar with AI techniques"
         },
         "generative_bg": ""
     }

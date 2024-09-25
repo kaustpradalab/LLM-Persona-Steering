@@ -93,6 +93,13 @@
                     "information related to domestic violence, gender misconceptions, and statistics on abuse": 10055,
                     "information related to divorce, including details about married couples, legal aspects, and implications on familie": 5030
                 }
+            },
+            "AI familiar degree": {
+                "familiar": {
+                    "mentions of experts or expertise in various fields": 2529,
+                    "technical terms related to advanced or cutting-edge technology": 7857,
+                    "terms related to artificial intelligence and its applications, especially in future scenarios": 9572
+                }
             }
         }
     }

@@ -1,0 +1,28 @@
+[
+    {
+        "idx": 22,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "",
+            "Social ideology": "",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": "",
+            "AI familiar degree": "familiar"
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is ",
+            "AI familiar degree": "You are familiar with AI techniques"
+        },
+        "generative_bg": ""
+    }
+]

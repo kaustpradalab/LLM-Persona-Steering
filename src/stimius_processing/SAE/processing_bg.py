@@ -94,7 +94,8 @@ def fixed_bg(features):
     "Social ideology": "you hold strong beliefs in {Social ideology}",
     "Emotional intelligence": "You're an  {Emotional intelligence} person",
     "Professional commitment": "you show your professional commitment as someone who is {Professional commitment}",
-    "Family background": "your family relationship is {Family background}"
+    "Family background": "your family relationship is {Family background}",
+    "AI familiar degree": "You are {AI familiar degree} with AI techniques"
     }
     return {key: value.format(**features) for key, value in template.items()}
 
