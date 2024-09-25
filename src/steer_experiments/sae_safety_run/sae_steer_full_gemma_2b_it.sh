@@ -1,6 +1,6 @@
 #!/bin/bash
 
-python SAE/sae_run.py \
+python SAE/safety_sae_run.py \
     --model_name gemma-2b-it \
     --sae_name gemma-2b-it-res-jb \
     --sae_id blocks.12.hook_resid_post \
@@ -10,6 +10,6 @@ python SAE/sae_run.py \
     --temperature 0.2 \
     --freq_penalty 1 \
     --bg_type fixed \
-    --steer_file_path ../data/SAE/bg_features/full/gemma-2b-it.json \
+    --steer_file_path ../data/SAE/bg_features/safety/gemma-2b-it.json \
     --save_dir_path ../data/SAE/steer_result/case_study/safety_bench/gemma-2b-it \
     --zero_shot True \

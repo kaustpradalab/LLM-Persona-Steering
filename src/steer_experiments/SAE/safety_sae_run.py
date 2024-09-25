@@ -101,6 +101,7 @@ def gen(model_name, sae_name, sae_id, tokenizer_name, layer, coeff, bg_type, tem
     batch_size = 8
     with open(outpath, 'a', encoding='utf-8') as outf:
         for start in trange(0, len(data), batch_size):
+            print(f"Processing batch {start // batch_size + 1}")
             batch_data = data[start: start + batch_size]
             queries = [d['prompt'] for d in batch_data]
             inputs = tokenizer(queries, padding=True, return_tensors="pt", truncation=True, max_length=2048).to('cuda')
