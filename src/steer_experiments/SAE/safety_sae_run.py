@@ -64,7 +64,7 @@ def construct_evaluate_prompts(path, outpath, en=True, zero_shot=True, shot_path
         json.dump(res, outf, ensure_ascii=False, indent=2)
 
 
-def gen(model, sae, tokenizer, layer, coeff, bg_type, temperature, freq_penalty, seed_num, bg_item, path, outpath):
+def gen(model, sae, layer, coeff, bg_type, temperature, freq_penalty, seed_num, bg_item, path, outpath):
     with open(path, encoding='utf-8') as f:
         data = json.load(f)
         
@@ -91,21 +91,17 @@ def gen(model, sae, tokenizer, layer, coeff, bg_type, temperature, freq_penalty,
         return
 
     model = model.eval()
-    tokenizer.padding_side = 'left'
-
     batch_size = 8
     with open(outpath, 'a', encoding='utf-8') as outf:
         for start in trange(0, len(data), batch_size):
             print(f"Processing batch {start // batch_size + 1}")
             batch_data = data[start: start + batch_size]
             queries = [d['prompt'] for d in batch_data]
-            inputs = tokenizer(queries, padding=True, return_tensors="pt", truncation=True, max_length=2048).to('cuda')
-
             idx_dict, steering_vectors = get_steer_vectors(sae, bg_type, bg_item['features'])
             print("we will steer the features:", idx_dict)
             sampling_kwargs = dict(temperature=temperature, freq_penalty=freq_penalty)
 
-            outputs = get_likelihood_generate(inputs, model, layer, coeff, steering_vectors, True, sampling_kwargs, seed=seed_num)
+            outputs = get_likelihood_generate(queries, model, layer, coeff, steering_vectors, True, sampling_kwargs, seed=seed_num)
 
             responses = []
             for idx in range(len(outputs)):
@@ -197,7 +193,6 @@ def get_args():
     parser.add_argument('--model_name', type=str, default=None, required=True)
     parser.add_argument('--sae_name', type=str, default=None, required=True)
     parser.add_argument('--sae_id', type=str, default=None, required=True)
-    parser.add_argument('--tokenizer_name', type=str, default=None, required=True)
     parser.add_argument('--layer', type=int, default=0)
     parser.add_argument('--coeff', type=int, default=200)
     parser.add_argument('--bg_type', choices=["fixed", "gen"], default="fixed")
@@ -228,7 +223,6 @@ def main():
 
     device = set_up()
     model, sae = load_model(model_name, sae_name, sae_id, device)
-    tokenizer = AutoTokenizer.from_pretrained(tokenizer_name)
 
     bg=json.load(open(args.steer_file_path, encoding='utf-8'))
 
@@ -245,7 +239,7 @@ def main():
         medium_results_file_dir = os.path.join(outpath_m, f"{bg_item['idx']}.json")
         print("save_dir", outpath_m)
         os.makedirs(outpath_m, exist_ok=True)
-        gen(model, sae, tokenizer, layer, coeff, bg_type, temperature, freq_penalty, seed, bg_item, path, medium_results_file_dir)
+        gen(model, sae, layer, coeff, bg_type, temperature, freq_penalty, seed, bg_item, path, medium_results_file_dir)
 
         # extract answers from the responses
         outpath_p = f'{args.save_dir_path}/zeroshot{zero_shot}/processed_results' #/test_en_eva_zeroshot{zero_shot}_res_processed.json'
