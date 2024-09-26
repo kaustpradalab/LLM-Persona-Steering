@@ -33,8 +33,6 @@ def get_args():
     parser.add_argument('--save_dir_path', type=str)
     parser.add_argument('--testset', type=str, default="TRAIT_Dark")
 
-    parser.add_argument('--temperature', type=float, default=0.2)
-    parser.add_argument('--freq_penalty', type=float, default=1.0)
     parser.add_argument('--prompt_type', type=int, default=1)
     parser.add_argument('--inference_type', type=str, default="chat")
     parser.add_argument('--seed', type=int, default=16)
@@ -76,11 +74,10 @@ def main():
                 encoded=apply_format(prompt, args.inference_type, tokenizer)
                 idx_dict, steering_vectors = get_steer_vectors(sae,args.bg_type, bg_item['features'])
                 print("we will steer the features:", idx_dict)
-                sampling_kwargs = dict(temperature=args.temperature, freq_penalty=args.freq_penalty)
                 
                 if args.steer_mode:
                     print("Steer Mode: ON")
-                    likelihoods = get_likelihood_steer(encoded, model, args.layer, args.coeff, steering_vectors, True, sampling_kwargs, seed=args.seed).squeeze().tolist()
+                    likelihoods = get_likelihood_steer(encoded, model, args.layer, args.coeff, steering_vectors, True, seed=args.seed).squeeze().tolist()
                 else:
                     print("Steer Mode: OFF")
                     likelihoods = get_likelihood(model, encoded, device).squeeze().tolist()

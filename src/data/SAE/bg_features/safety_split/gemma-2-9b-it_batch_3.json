@@ -1,0 +1,100 @@
+[
+    {
+        "idx": 6,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "middle school to high school",
+            "Socioeconomic status": "",
+            "Social ideology": "",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a middle school to high school education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Education level": [
+                    22329
+                ]
+            },
+            "generative": null
+        }
+    },
+    {
+        "idx": 7,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "bachelor's degree and higher",
+            "Socioeconomic status": "",
+            "Social ideology": "",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a bachelor's degree and higher education level",
+            "Socioeconomic status": "you come from a  wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Education level": [
+                    21439,
+                    85771
+                ]
+            },
+            "generative": null
+        }
+    },
+    {
+        "idx": 8,
+        "attributes": {
+            "Gender": "",
+            "Age": "",
+            "Education level": "",
+            "Socioeconomic status": "rich",
+            "Social ideology": "",
+            "Emotional intelligence": "",
+            "Professional commitment": "",
+            "Family background": ""
+        },
+        "fixed_bg": {
+            "Gender": "your gender is ",
+            "Age": "you are a  people",
+            "Education level": "you have a  education level",
+            "Socioeconomic status": "you come from a rich wealth status background",
+            "Social ideology": "you hold strong beliefs in ",
+            "Emotional intelligence": "You're an   person",
+            "Professional commitment": "you show your professional commitment as someone who is ",
+            "Family background": "your family relationship is "
+        },
+        "generative_bg": "",
+        "features": {
+            "fixed": {
+                "Socioeconomic status": [
+                    10022,
+                    1739
+                ]
+            },
+            "generative": null
+        }
+    }
+]

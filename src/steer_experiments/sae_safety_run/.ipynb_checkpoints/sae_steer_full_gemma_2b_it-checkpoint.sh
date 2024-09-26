@@ -6,7 +6,7 @@ python SAE/safety_sae_run.py \
     --sae_id blocks.12.hook_resid_post \
     --tokenizer_name google/gemma-2b-it \
     --layer 12 \
-    --coeff 200 \
+    --coeff 100 \
     --temperature 0.2 \
     --freq_penalty 1 \
     --bg_type fixed \

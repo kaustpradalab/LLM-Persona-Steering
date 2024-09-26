@@ -7,8 +7,6 @@ python SAE/sae_run.py \
     --tokenizer_name google/gemma-2-9b-it \
     --layer 31 \
     --coeff 800 \
-    --temperature 0.2 \
-    --freq_penalty 1 \
     --bg_type fixed \
     --steer_mode \
     --steer_file_path ../data/SAE/bg_features/full_split/gemma-2-9b-it_11_15.json \
