@@ -58,14 +58,8 @@ def hooked_generate(model, inputs, fwd_hooks=[], seed=None, **kwargs):
     if seed is not None:
         torch.manual_seed(seed)
     with model.hooks(fwd_hooks=fwd_hooks):
-        tokenized = model.to_tokens(inputs, padding_side = 'left')
-        result = model.generate(
-            stop_at_eos=False,  # avoids a bug on MPS
-            input=tokenized,
-            max_new_tokens=30,
-            do_sample=True,
-            **kwargs)
-    return result
+        outputs = model.generate(input=inputs['input_ids'], do_sample=False, max_new_tokens=64, stop_at_eos=False, **kwargs)
+    return outputs
 
 def get_likelihood_generate(inputs, model, layer, coeff, steering_vectors, steering_on, sampling_kwargs, seed=None):
     model.reset_hooks()
