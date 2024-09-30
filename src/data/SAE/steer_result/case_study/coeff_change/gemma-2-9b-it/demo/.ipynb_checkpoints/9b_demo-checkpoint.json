@@ -5,72 +5,47 @@
         "prompt_type": 1,
         "feature": {
             "Conservatism": {
-                "mentions of conservative ideology or related terms": 30812,
-                "references to conservative political figures and themes": 38950
+                "mentions of conservative ideologies and politics": 5060
             }
         },
         "result": [
             {
-                "coefficient": 0,
+                "coefficient": 100,
                 "likelihood": {
                 }
             },
             {
                 "coefficient": 200,
                 "likelihood": {
-                    
                 }
             },
             {
                 "coefficient": 400,
                 "likelihood": {
-                    
+                }
+            },
+            {
+                "coefficient": 600,
+                "likelihood": {
                 }
             },
             {
                 "coefficient": 800,
                 "likelihood": {
-                    
                 }
             },
             {
                 "coefficient": 1000,
                 "likelihood": {
-                    
+                }
+            },
+            {
+                "coefficient": 1500,
+                "likelihood": {
                 }
             },
             {
                 "coefficient": 2000,
-                "likelihood": {
-                    
-                }
-            },
-            {
-                "coefficient": 2000,
-                "likelihood": {
-                    
-                }
-            },
-            {
-                "coefficient": 5000,
-                "likelihood": {
-                    
-                }
-            },
-            {
-                "coefficient": 10000,
-                "likelihood": {
-                    
-                }
-            },
-            {
-                "coefficient": 50000,
-                "likelihood": {
-                    
-                }
-            },
-            {
-                "coefficient": 100000,
                 "likelihood": {
                 }
             }
