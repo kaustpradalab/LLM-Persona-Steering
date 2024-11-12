@@ -1,4 +1,4 @@
-# llm-personal-superposition
+# WHAT MAKES YOUR MODEL A LOW-EMPATHY OR WARMTH PERSON: EXPLORING THE ORIGINS OF PERSONALITY IN LLMS
 
 ## Preparation
 Install required python packages:
