@@ -6,7 +6,7 @@
 Here is an overview diagram about our pipeline to steer the LLM persona by dual ways.
 
 <div align="center">
-  <img src="overview_pages-to-jpg-0001.jpg" alt="Alt text">
+  <img src="overview.jpg" alt="Alt text">
 </div>
 
 ## Preparation
