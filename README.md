@@ -77,5 +77,28 @@ python SAE/analysis.py \
 
 ### 2. RepE
 
-## Reference
-> **Do LLMs Have Distinct and Consistent Personalities? TRAIT: Personality Testset designed for LLMs with Psychometrics**
+## Citation
+
+Please consider citing our paper if you found our work interesting and useful.
+```
+@article{zhang2023safetybench,
+      title={SafetyBench: Evaluating the Safety of Large Language Models with Multiple Choice Questions}, 
+      author={Zhexin Zhang and Leqi Lei and Lindong Wu and Rui Sun and Yongkang Huang and Chong Long and Xiao Liu and Xuanyu Lei and Jie Tang and Minlie Huang},
+      journal={arXiv preprint arXiv:2309.07045},
+      year={2023}
+}
+
+@article{lee2024llms,
+  title={Do llms have distinct and consistent personality? trait: Personality testset designed for llms with psychometrics},
+  author={Lee, Seungbeen and Lim, Seungwon and Han, Seungju and Oh, Giyeong and Chae, Hyungjoo and Chung, Jiwan and Kim, Minju and Kwak, Beong-woo and Lee, Yeonsoo and Lee, Dongha and others},
+  journal={arXiv preprint arXiv:2406.14703},
+  year={2024}
+}
+
+@article{yang2024makes,
+  title={What makes your model a low-empathy or warmth person: Exploring the Origins of Personality in LLMs},
+  author={Yang, Shu and Zhu, Shenzhe and Bao, Ruoxuan and Liu, Liang and Cheng, Yu and Hu, Lijie and Li, Mengdi and Wang, Di},
+  journal={arXiv preprint arXiv:2410.10863},
+  year={2024}
+}
+```
