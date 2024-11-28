@@ -13,8 +13,8 @@ Here is an overview diagram about our pipeline to steer the LLM persona by dual 
 ## **⏰ TODO List**
 
 - [x] Release Dataset
-- [x] Release SAE-based experiment instruction
-- [ ] Release RepE-based experiment instruction
+- [x] Release SAE-based experiment code & instruction
+- [ ] Release RepE-based experiment code & instruction
 
 ## 🧹 Preparation
 Install required python packages:
