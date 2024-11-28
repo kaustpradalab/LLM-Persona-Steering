@@ -1,7 +1,13 @@
 # WHAT MAKES YOUR MODEL A LOW-EMPATHY OR WARMTH PERSON: EXPLORING THE ORIGINS OF PERSONALITY IN LLMS
-[[Arxiv]](https://arxiv.org/abs/2410.10863)
 
-[image](https://ipl-uw.github.io/) 
+[![Paper](https://img.shields.io/badge/Paper-%F0%9F%8E%93-lightgrey?style=for-the-badge&logoWidth=40)](https://arxiv.org/abs/2410.10863)
+[![Dataset](https://img.shields.io/badge/Dataset-%F0%9F%92%BE-green?style=for-the-badge&logoWidth=40)]()
+
+Here is an overview diagram about our pipeline to steer the LLM persona by dual ways.
+
+<div align="center">
+  <img src="overview_pages-to-jpg-0001.jpg" alt="Alt text">
+</div>
 
 ## Preparation
 Install required python packages:
