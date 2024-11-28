@@ -9,15 +9,22 @@ Here is an overview diagram about our pipeline to steer the LLM persona by dual 
   <img src="overview.jpg" alt="Alt text">
 </div>
 
-## Preparation
+
+## **⏰ TODO List**
+
+- [x] Release Dataset
+- [x] Release SAE-based experiment instruction
+- [ ] Release RepE-based experiment instruction
+
+## 🧹 Preparation
 Install required python packages:
 ```
 pip install -r requirements.txt
 ```
 
-## Stimius Processing
+## 👀 Stimius Processing
 
-### 1. SAE
+### SAE
 
 1.1 Background Generation
 
@@ -32,6 +39,7 @@ Then, we can genertate bgs in two types(fixed & generative)
 ```
 python SAE/processing_bg.py --json_file [path to bg json] --bg_type ['fixed' or 'gen']
 ```
+
 1.2 Features Explorations
 You can use convert_to_features to convert the background to a proper features list which includes the key features related the background description
 
@@ -42,17 +50,11 @@ python SAE/convert_to_features.py \
     --background [path to background json] \
     --layer [index of layer]
 ```
-*More detailed examples refer to src/stimius_processing/SAE/sae_stimius_run.sh*
 
-### 2. RepE
-2.1 Keywords Generation
+## 🧾 Vector Control & Running Testset
 
-2.2 Control Vector Training
-
-## Vector Control & TRAIT-Dark Running
-
-### 1. SAE
-run the TRAIT-Dark 
+### SAE
+run the Testset
 ```
 cd src/steer_experiments
 python SAE/sae_run.py \
@@ -69,22 +71,16 @@ python SAE/sae_run.py \
     --inference_type  \
     --save_dir_path
 ```
-*More detailed examples refer to src/steer_experiments/SAE/sae_trait_run*
 
-### 2. RepE
+## 🙌 Evaluation
 
-## Result
-
-### 1. SAE
+### SAE
 You can get the result of the sae task. 
 ```
 python SAE/analysis.py \
     --save_path \
     --prompt_type 1 
 ```
-*More detailed examples refer to src/steer_experiments/SAE/sae_trait_run*
-
-### 2. RepE
 
 ## Citation
 
