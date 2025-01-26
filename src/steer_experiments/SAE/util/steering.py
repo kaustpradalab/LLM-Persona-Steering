@@ -18,7 +18,7 @@ def set_up():
 
 def load_model(model_name, sae_name, sae_id, device):
     # get model
-    model = HookedTransformer.from_pretrained(model_name, device = device, cache_dir="/root/autodl-tmp/cache")
+    model = HookedTransformer.from_pretrained(model_name, device = device)
     # get the SAE for this layer
     sae, cfg_dict, _ = SAE.from_pretrained(
         release = sae_name,
