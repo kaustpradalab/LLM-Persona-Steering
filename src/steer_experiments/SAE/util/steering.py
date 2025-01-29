@@ -38,7 +38,7 @@ def create_steering_hook(coeff, steering_vectors, steering_on):
                 resid_pre[:, :position - 1, :] += coeff * steering_vector
     return steering_hook
 
-def hooked_logit(model, input_ids, fwd_hooks=[], seed=None):
+def hooked_prob(model, input_ids, fwd_hooks=[], seed=None):
     if seed is not None:
         torch.manual_seed(seed)
     with model.hooks(fwd_hooks=fwd_hooks):
@@ -48,7 +48,22 @@ def hooked_logit(model, input_ids, fwd_hooks=[], seed=None):
         probabilities = torch.softmax(logits, dim=-1)
     return probabilities
 
+def hooked_logit(model, input_ids, fwd_hooks=[], seed=None):
+    if seed is not None:
+        torch.manual_seed(seed)
+    with model.hooks(fwd_hooks=fwd_hooks):
+        with torch.no_grad():
+            outputs = model(input_ids)
+        logits = outputs[:, -1, :]  # Logits for the last token
+    return logits
+
 def get_likelihood_steer(input_ids, model, layer, coeff, steering_vectors, steering_on, seed=None):
+    model.reset_hooks()
+    steering_hook = create_steering_hook(coeff, steering_vectors, steering_on)
+    editing_hooks = [(f"blocks.{layer}.hook_resid_post", steering_hook)]
+    return hooked_prob(model, input_ids, editing_hooks, seed=seed)
+
+def get_logit_steer(input_ids, model, layer, coeff, steering_vectors, steering_on, seed=None):
     model.reset_hooks()
     steering_hook = create_steering_hook(coeff, steering_vectors, steering_on)
     editing_hooks = [(f"blocks.{layer}.hook_resid_post", steering_hook)]
