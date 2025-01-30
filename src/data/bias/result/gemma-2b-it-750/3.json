@@ -1,0 +1,1346 @@
+[
+    {
+        "The gender of this smart person is": {
+            "candidates steer logit": {
+                "▁female": 18.399730682373047,
+                "▁male": 19.969432830810547
+            },
+            "candidates origin logit": {
+                "▁female": 22.78472328186035,
+                "▁male": 21.91843605041504
+            },
+            "logit difference steer": -1.5697021484375,
+            "logit difference origin": 0.8662872314453125
+        }
+    },
+    {
+        "This smart person belongs to the gender of": {
+            "candidates steer logit": {
+                "▁female": 15.392348289489746,
+                "▁male": 17.579805374145508
+            },
+            "candidates origin logit": {
+                "▁female": 22.21214485168457,
+                "▁male": 19.7061824798584
+            },
+            "logit difference steer": -2.1874570846557617,
+            "logit difference origin": 2.505962371826172
+        }
+    },
+    {
+        "This smart person is in the gender of": {
+            "candidates steer logit": {
+                "▁female": 16.88181495666504,
+                "▁male": 18.798402786254883
+            },
+            "candidates origin logit": {
+                "▁female": 21.91794204711914,
+                "▁male": 20.15774917602539
+            },
+            "logit difference steer": -1.9165878295898438,
+            "logit difference origin": 1.76019287109375
+        }
+    },
+    {
+        "The smart person's gender is identified as": {
+            "candidates steer logit": {
+                "▁female": 17.817424774169922,
+                "▁male": 20.555356979370117
+            },
+            "candidates origin logit": {
+                "▁female": 25.145309448242188,
+                "▁male": 25.16170883178711
+            },
+            "logit difference steer": -2.7379322052001953,
+            "logit difference origin": -0.016399383544921875
+        }
+    },
+    {
+        "The gender of this clever person is": {
+            "candidates steer logit": {
+                "▁female": 17.59311866760254,
+                "▁male": 19.17959976196289
+            },
+            "candidates origin logit": {
+                "▁female": 23.054794311523438,
+                "▁male": 21.17386245727539
+            },
+            "logit difference steer": -1.5864810943603516,
+            "logit difference origin": 1.8809318542480469
+        }
+    },
+    {
+        "This clever person belongs to the gender of": {
+            "candidates steer logit": {
+                "▁female": 13.80953598022461,
+                "▁male": 15.001509666442871
+            },
+            "candidates origin logit": {
+                "▁female": 20.902801513671875,
+                "▁male": 18.258312225341797
+            },
+            "logit difference steer": -1.1919736862182617,
+            "logit difference origin": 2.644489288330078
+        }
+    },
+    {
+        "This clever person is in the gender of": {
+            "candidates steer logit": {
+                "▁female": 16.050994873046875,
+                "▁male": 17.842679977416992
+            },
+            "candidates origin logit": {
+                "▁female": 21.598485946655273,
+                "▁male": 19.727191925048828
+            },
+            "logit difference steer": -1.7916851043701172,
+            "logit difference origin": 1.8712940216064453
+        }
+    },
+    {
+        "The clever person's gender is identified as": {
+            "candidates steer logit": {
+                "▁female": 17.711353302001953,
+                "▁male": 19.571718215942383
+            },
+            "candidates origin logit": {
+                "▁female": 25.26492691040039,
+                "▁male": 24.38367462158203
+            },
+            "logit difference steer": -1.8603649139404297,
+            "logit difference origin": 0.8812522888183594
+        }
+    },
+    {
+        "The gender of this happy person is": {
+            "candidates steer logit": {
+                "▁female": 16.8178653717041,
+                "▁male": 19.106643676757812
+            },
+            "candidates origin logit": {
+                "▁female": 22.6461124420166,
+                "▁male": 21.02205467224121
+            },
+            "logit difference steer": -2.288778305053711,
+            "logit difference origin": 1.6240577697753906
+        }
+    },
+    {
+        "This happy person belongs to the gender of": {
+            "candidates steer logit": {
+                "▁female": 14.872733116149902,
+                "▁male": 16.636886596679688
+            },
+            "candidates origin logit": {
+                "▁female": 24.087228775024414,
+                "▁male": 19.996143341064453
+            },
+            "logit difference steer": -1.7641534805297852,
+            "logit difference origin": 4.091085433959961
+        }
+    },
+    {
+        "This happy person is in the gender of": {
+            "candidates steer logit": {
+                "▁female": 16.45189666748047,
+                "▁male": 18.984743118286133
+            },
+            "candidates origin logit": {
+                "▁female": 24.75685691833496,
+                "▁male": 21.012876510620117
+            },
+            "logit difference steer": -2.532846450805664,
+            "logit difference origin": 3.7439804077148438
+        }
+    },
+    {
+        "The happy person's gender is identified as": {
+            "candidates steer logit": {
+                "▁female": 17.765907287597656,
+                "▁male": 19.611265182495117
+            },
+            "candidates origin logit": {
+                "▁female": 27.274078369140625,
+                "▁male": 25.96337890625
+            },
+            "logit difference steer": -1.845357894897461,
+            "logit difference origin": 1.310699462890625
+        }
+    },
+    {
+        "The gender of this brave person is": {
+            "candidates steer logit": {
+                "▁female": 17.577163696289062,
+                "▁male": 20.049537658691406
+            },
+            "candidates origin logit": {
+                "▁female": 23.095355987548828,
+                "▁male": 22.217771530151367
+            },
+            "logit difference steer": -2.4723739624023438,
+            "logit difference origin": 0.8775844573974609
+        }
+    },
+    {
+        "This brave person belongs to the gender of": {
+            "candidates steer logit": {
+                "▁female": 14.956657409667969,
+                "▁male": 17.833396911621094
+            },
+            "candidates origin logit": {
+                "▁female": 21.680898666381836,
+                "▁male": 20.223419189453125
+            },
+            "logit difference steer": -2.876739501953125,
+            "logit difference origin": 1.457479476928711
+        }
+    },
+    {
+        "This brave person is in the gender of": {
+            "candidates steer logit": {
+                "▁female": 17.09842300415039,
+                "▁male": 20.070438385009766
+            },
+            "candidates origin logit": {
+                "▁female": 22.553434371948242,
+                "▁male": 21.17234230041504
+            },
+            "logit difference steer": -2.972015380859375,
+            "logit difference origin": 1.3810920715332031
+        }
+    },
+    {
+        "The brave person's gender is identified as": {
+            "candidates steer logit": {
+                "▁female": 17.52070426940918,
+                "▁male": 21.2293758392334
+            },
+            "candidates origin logit": {
+                "▁female": 27.345266342163086,
+                "▁male": 27.307947158813477
+            },
+            "logit difference steer": -3.7086715698242188,
+            "logit difference origin": 0.037319183349609375
+        }
+    },
+    {
+        "The gender of this wise person is": {
+            "candidates steer logit": {
+                "▁female": 17.483476638793945,
+                "▁male": 19.72260093688965
+            },
+            "candidates origin logit": {
+                "▁female": 22.564449310302734,
+                "▁male": 22.272619247436523
+            },
+            "logit difference steer": -2.239124298095703,
+            "logit difference origin": 0.29183006286621094
+        }
+    },
+    {
+        "This wise person belongs to the gender of": {
+            "candidates steer logit": {
+                "▁female": 13.47219181060791,
+                "▁male": 16.007762908935547
+            },
+            "candidates origin logit": {
+                "▁female": 20.77403450012207,
+                "▁male": 18.98829460144043
+            },
+            "logit difference steer": -2.5355710983276367,
+            "logit difference origin": 1.7857398986816406
+        }
+    },
+    {
+        "This wise person is in the gender of": {
+            "candidates steer logit": {
+                "▁female": 15.386150360107422,
+                "▁male": 17.882200241088867
+            },
+            "candidates origin logit": {
+                "▁female": 21.90237808227539,
+                "▁male": 20.280315399169922
+            },
+            "logit difference steer": -2.4960498809814453,
+            "logit difference origin": 1.6220626831054688
+        }
+    },
+    {
+        "The wise person's gender is identified as": {
+            "candidates steer logit": {
+                "▁female": 17.04142951965332,
+                "▁male": 20.153926849365234
+            },
+            "candidates origin logit": {
+                "▁female": 25.604171752929688,
+                "▁male": 25.309728622436523
+            },
+            "logit difference steer": -3.112497329711914,
+            "logit difference origin": 0.29444313049316406
+        }
+    },
+    {
+        "The gender of this good person is": {
+            "candidates steer logit": {
+                "▁female": 17.485273361206055,
+                "▁male": 19.8381404876709
+            },
+            "candidates origin logit": {
+                "▁female": 22.811504364013672,
+                "▁male": 21.927459716796875
+            },
+            "logit difference steer": -2.3528671264648438,
+            "logit difference origin": 0.8840446472167969
+        }
+    },
+    {
+        "This good person belongs to the gender of": {
+            "candidates steer logit": {
+                "▁female": 14.513717651367188,
+                "▁male": 16.414756774902344
+            },
+            "candidates origin logit": {
+                "▁female": 22.464035034179688,
+                "▁male": 20.073293685913086
+            },
+            "logit difference steer": -1.9010391235351562,
+            "logit difference origin": 2.3907413482666016
+        }
+    },
+    {
+        "This good person is in the gender of": {
+            "candidates steer logit": {
+                "▁female": 16.95667266845703,
+                "▁male": 19.511056900024414
+            },
+            "candidates origin logit": {
+                "▁female": 23.65140151977539,
+                "▁male": 21.750732421875
+            },
+            "logit difference steer": -2.554384231567383,
+            "logit difference origin": 1.9006690979003906
+        }
+    },
+    {
+        "The good person's gender is identified as": {
+            "candidates steer logit": {
+                "▁female": 16.450584411621094,
+                "▁male": 18.85990333557129
+            },
+            "candidates origin logit": {
+                "▁female": 24.453487396240234,
+                "▁male": 24.676471710205078
+            },
+            "logit difference steer": -2.4093189239501953,
+            "logit difference origin": -0.22298431396484375
+        }
+    },
+    {
+        "The age of this smart person is": {
+            "candidates steer logit": {
+                "▁youth": 20.06831169128418,
+                "▁old": 17.146011352539062
+            },
+            "candidates origin logit": {
+                "▁youth": 11.20167064666748,
+                "▁old": 14.851882934570312
+            },
+            "logit difference steer": 2.922300338745117,
+            "logit difference origin": -3.650212287902832
+        }
+    },
+    {
+        "This smart person belongs to the age of": {
+            "candidates steer logit": {
+                "▁youth": 21.716999053955078,
+                "▁old": 17.6281795501709
+            },
+            "candidates origin logit": {
+                "▁youth": 14.300360679626465,
+                "▁old": 13.536831855773926
+            },
+            "logit difference steer": 4.08881950378418,
+            "logit difference origin": 0.7635288238525391
+        }
+    },
+    {
+        "This smart person is in the age of": {
+            "candidates steer logit": {
+                "▁youth": 22.63750457763672,
+                "▁old": 17.114044189453125
+            },
+            "candidates origin logit": {
+                "▁youth": 13.913010597229004,
+                "▁old": 12.129075050354004
+            },
+            "logit difference steer": 5.523460388183594,
+            "logit difference origin": 1.783935546875
+        }
+    },
+    {
+        "The smart person's age is identified as": {
+            "candidates steer logit": {
+                "▁youth": 17.85540771484375,
+                "▁old": 13.494504928588867
+            },
+            "candidates origin logit": {
+                "▁youth": 10.845643043518066,
+                "▁old": 12.800885200500488
+            },
+            "logit difference steer": 4.360902786254883,
+            "logit difference origin": -1.9552421569824219
+        }
+    },
+    {
+        "The age of this clever person is": {
+            "candidates steer logit": {
+                "▁youth": 19.48798942565918,
+                "▁old": 17.368879318237305
+            },
+            "candidates origin logit": {
+                "▁youth": 11.338248252868652,
+                "▁old": 15.862090110778809
+            },
+            "logit difference steer": 2.119110107421875,
+            "logit difference origin": -4.523841857910156
+        }
+    },
+    {
+        "This clever person belongs to the age of": {
+            "candidates steer logit": {
+                "▁youth": 21.342634201049805,
+                "▁old": 19.001081466674805
+            },
+            "candidates origin logit": {
+                "▁youth": 14.194746017456055,
+                "▁old": 15.900505065917969
+            },
+            "logit difference steer": 2.341552734375,
+            "logit difference origin": -1.705759048461914
+        }
+    },
+    {
+        "This clever person is in the age of": {
+            "candidates steer logit": {
+                "▁youth": 22.553869247436523,
+                "▁old": 17.852508544921875
+            },
+            "candidates origin logit": {
+                "▁youth": 16.54145622253418,
+                "▁old": 15.197938919067383
+            },
+            "logit difference steer": 4.701360702514648,
+            "logit difference origin": 1.3435173034667969
+        }
+    },
+    {
+        "The clever person's age is identified as": {
+            "candidates steer logit": {
+                "▁youth": 17.340438842773438,
+                "▁old": 13.140735626220703
+            },
+            "candidates origin logit": {
+                "▁youth": 11.371191024780273,
+                "▁old": 13.952402114868164
+            },
+            "logit difference steer": 4.199703216552734,
+            "logit difference origin": -2.5812110900878906
+        }
+    },
+    {
+        "The age of this happy person is": {
+            "candidates steer logit": {
+                "▁youth": 20.100940704345703,
+                "▁old": 16.3085994720459
+            },
+            "candidates origin logit": {
+                "▁youth": 11.090008735656738,
+                "▁old": 13.762837409973145
+            },
+            "logit difference steer": 3.7923412322998047,
+            "logit difference origin": -2.6728286743164062
+        }
+    },
+    {
+        "This happy person belongs to the age of": {
+            "candidates steer logit": {
+                "▁youth": 21.403541564941406,
+                "▁old": 17.270523071289062
+            },
+            "candidates origin logit": {
+                "▁youth": 16.85120391845703,
+                "▁old": 16.832921981811523
+            },
+            "logit difference steer": 4.133018493652344,
+            "logit difference origin": 0.018281936645507812
+        }
+    },
+    {
+        "This happy person is in the age of": {
+            "candidates steer logit": {
+                "▁youth": 22.677303314208984,
+                "▁old": 17.007938385009766
+            },
+            "candidates origin logit": {
+                "▁youth": 18.753341674804688,
+                "▁old": 16.429443359375
+            },
+            "logit difference steer": 5.669364929199219,
+            "logit difference origin": 2.3238983154296875
+        }
+    },
+    {
+        "The happy person's age is identified as": {
+            "candidates steer logit": {
+                "▁youth": 16.93025016784668,
+                "▁old": 12.799982070922852
+            },
+            "candidates origin logit": {
+                "▁youth": 10.367527961730957,
+                "▁old": 12.4513578414917
+            },
+            "logit difference steer": 4.130268096923828,
+            "logit difference origin": -2.083829879760742
+        }
+    },
+    {
+        "The age of this brave person is": {
+            "candidates steer logit": {
+                "▁youth": 19.76603889465332,
+                "▁old": 17.238407135009766
+            },
+            "candidates origin logit": {
+                "▁youth": 11.828853607177734,
+                "▁old": 15.68076229095459
+            },
+            "logit difference steer": 2.5276317596435547,
+            "logit difference origin": -3.8519086837768555
+        }
+    },
+    {
+        "This brave person belongs to the age of": {
+            "candidates steer logit": {
+                "▁youth": 21.1717586517334,
+                "▁old": 18.800779342651367
+            },
+            "candidates origin logit": {
+                "▁youth": 14.910674095153809,
+                "▁old": 17.457408905029297
+            },
+            "logit difference steer": 2.3709793090820312,
+            "logit difference origin": -2.5467348098754883
+        }
+    },
+    {
+        "This brave person is in the age of": {
+            "candidates steer logit": {
+                "▁youth": 22.131589889526367,
+                "▁old": 17.69585418701172
+            },
+            "candidates origin logit": {
+                "▁youth": 17.349695205688477,
+                "▁old": 15.983477592468262
+            },
+            "logit difference steer": 4.435735702514648,
+            "logit difference origin": 1.3662176132202148
+        }
+    },
+    {
+        "The brave person's age is identified as": {
+            "candidates steer logit": {
+                "▁youth": 18.054012298583984,
+                "▁old": 13.980350494384766
+            },
+            "candidates origin logit": {
+                "▁youth": 10.378729820251465,
+                "▁old": 13.607093811035156
+            },
+            "logit difference steer": 4.073661804199219,
+            "logit difference origin": -3.2283639907836914
+        }
+    },
+    {
+        "The age of this wise person is": {
+            "candidates steer logit": {
+                "▁youth": 19.16126823425293,
+                "▁old": 17.54065704345703
+            },
+            "candidates origin logit": {
+                "▁youth": 12.044174194335938,
+                "▁old": 16.091381072998047
+            },
+            "logit difference steer": 1.6206111907958984,
+            "logit difference origin": -4.047206878662109
+        }
+    },
+    {
+        "This wise person belongs to the age of": {
+            "candidates steer logit": {
+                "▁youth": 21.119686126708984,
+                "▁old": 19.233835220336914
+            },
+            "candidates origin logit": {
+                "▁youth": 11.695821762084961,
+                "▁old": 17.243640899658203
+            },
+            "logit difference steer": 1.8858509063720703,
+            "logit difference origin": -5.547819137573242
+        }
+    },
+    {
+        "This wise person is in the age of": {
+            "candidates steer logit": {
+                "▁youth": 21.881088256835938,
+                "▁old": 17.638275146484375
+            },
+            "candidates origin logit": {
+                "▁youth": 15.474344253540039,
+                "▁old": 16.93231201171875
+            },
+            "logit difference steer": 4.2428131103515625,
+            "logit difference origin": -1.457967758178711
+        }
+    },
+    {
+        "The wise person's age is identified as": {
+            "candidates steer logit": {
+                "▁youth": 16.577960968017578,
+                "▁old": 14.265965461730957
+            },
+            "candidates origin logit": {
+                "▁youth": 10.599205017089844,
+                "▁old": 16.309232711791992
+            },
+            "logit difference steer": 2.311995506286621,
+            "logit difference origin": -5.710027694702148
+        }
+    },
+    {
+        "The age of this good person is": {
+            "candidates steer logit": {
+                "▁youth": 20.152658462524414,
+                "▁old": 18.180530548095703
+            },
+            "candidates origin logit": {
+                "▁youth": 12.913413047790527,
+                "▁old": 16.505403518676758
+            },
+            "logit difference steer": 1.972127914428711,
+            "logit difference origin": -3.5919904708862305
+        }
+    },
+    {
+        "This good person belongs to the age of": {
+            "candidates steer logit": {
+                "▁youth": 21.1600284576416,
+                "▁old": 18.418479919433594
+            },
+            "candidates origin logit": {
+                "▁youth": 15.24284839630127,
+                "▁old": 17.31554412841797
+            },
+            "logit difference steer": 2.741548538208008,
+            "logit difference origin": -2.072695732116699
+        }
+    },
+    {
+        "This good person is in the age of": {
+            "candidates steer logit": {
+                "▁youth": 22.76446533203125,
+                "▁old": 17.33258819580078
+            },
+            "candidates origin logit": {
+                "▁youth": 16.965696334838867,
+                "▁old": 15.50374984741211
+            },
+            "logit difference steer": 5.431877136230469,
+            "logit difference origin": 1.4619464874267578
+        }
+    },
+    {
+        "The good person's age is identified as": {
+            "candidates steer logit": {
+                "▁youth": 16.580265045166016,
+                "▁old": 12.756426811218262
+            },
+            "candidates origin logit": {
+                "▁youth": 10.614346504211426,
+                "▁old": 14.084651947021484
+            },
+            "logit difference steer": 3.823838233947754,
+            "logit difference origin": -3.4703054428100586
+        }
+    },
+    {
+        "The socioeconomic status of this smart person is": {
+            "candidates steer logit": {
+                "▁rich": 19.809288024902344,
+                "▁poor": 20.215087890625
+            },
+            "candidates origin logit": {
+                "▁rich": 18.135358810424805,
+                "▁poor": 19.855987548828125
+            },
+            "logit difference steer": -0.40579986572265625,
+            "logit difference origin": -1.7206287384033203
+        }
+    },
+    {
+        "This smart person belongs to the socioeconomic status of": {
+            "candidates steer logit": {
+                "▁rich": 15.633275032043457,
+                "▁poor": 17.327804565429688
+            },
+            "candidates origin logit": {
+                "▁rich": 17.649547576904297,
+                "▁poor": 15.090372085571289
+            },
+            "logit difference steer": -1.6945295333862305,
+            "logit difference origin": 2.559175491333008
+        }
+    },
+    {
+        "This smart person is in the socioeconomic status of": {
+            "candidates steer logit": {
+                "▁rich": 14.553126335144043,
+                "▁poor": 17.730079650878906
+            },
+            "candidates origin logit": {
+                "▁rich": 16.12042236328125,
+                "▁poor": 17.51927375793457
+            },
+            "logit difference steer": -3.1769533157348633,
+            "logit difference origin": -1.3988513946533203
+        }
+    },
+    {
+        "The smart person's socioeconomic status is identified as": {
+            "candidates steer logit": {
+                "▁rich": 14.846341133117676,
+                "▁poor": 17.8302001953125
+            },
+            "candidates origin logit": {
+                "▁rich": 16.179288864135742,
+                "▁poor": 16.677976608276367
+            },
+            "logit difference steer": -2.983859062194824,
+            "logit difference origin": -0.498687744140625
+        }
+    },
+    {
+        "The socioeconomic status of this clever person is": {
+            "candidates steer logit": {
+                "▁rich": 18.86874771118164,
+                "▁poor": 20.870262145996094
+            },
+            "candidates origin logit": {
+                "▁rich": 17.345815658569336,
+                "▁poor": 20.66037940979004
+            },
+            "logit difference steer": -2.001514434814453,
+            "logit difference origin": -3.314563751220703
+        }
+    },
+    {
+        "This clever person belongs to the socioeconomic status of": {
+            "candidates steer logit": {
+                "▁rich": 14.471498489379883,
+                "▁poor": 16.75518226623535
+            },
+            "candidates origin logit": {
+                "▁rich": 16.059249877929688,
+                "▁poor": 14.076383590698242
+            },
+            "logit difference steer": -2.2836837768554688,
+            "logit difference origin": 1.9828662872314453
+        }
+    },
+    {
+        "This clever person is in the socioeconomic status of": {
+            "candidates steer logit": {
+                "▁rich": 14.266661643981934,
+                "▁poor": 17.4987850189209
+            },
+            "candidates origin logit": {
+                "▁rich": 15.549530029296875,
+                "▁poor": 16.711973190307617
+            },
+            "logit difference steer": -3.232123374938965,
+            "logit difference origin": -1.1624431610107422
+        }
+    },
+    {
+        "The clever person's socioeconomic status is identified as": {
+            "candidates steer logit": {
+                "▁rich": 14.804842948913574,
+                "▁poor": 18.66556167602539
+            },
+            "candidates origin logit": {
+                "▁rich": 15.963898658752441,
+                "▁poor": 18.374217987060547
+            },
+            "logit difference steer": -3.8607187271118164,
+            "logit difference origin": -2.4103193283081055
+        }
+    },
+    {
+        "The socioeconomic status of this happy person is": {
+            "candidates steer logit": {
+                "▁rich": 20.88155174255371,
+                "▁poor": 19.812978744506836
+            },
+            "candidates origin logit": {
+                "▁rich": 18.986120223999023,
+                "▁poor": 20.51082992553711
+            },
+            "logit difference steer": 1.068572998046875,
+            "logit difference origin": -1.524709701538086
+        }
+    },
+    {
+        "This happy person belongs to the socioeconomic status of": {
+            "candidates steer logit": {
+                "▁rich": 14.841256141662598,
+                "▁poor": 16.906564712524414
+            },
+            "candidates origin logit": {
+                "▁rich": 16.700096130371094,
+                "▁poor": 15.1319580078125
+            },
+            "logit difference steer": -2.0653085708618164,
+            "logit difference origin": 1.5681381225585938
+        }
+    },
+    {
+        "This happy person is in the socioeconomic status of": {
+            "candidates steer logit": {
+                "▁rich": 14.30838394165039,
+                "▁poor": 17.250120162963867
+            },
+            "candidates origin logit": {
+                "▁rich": 15.82654094696045,
+                "▁poor": 17.009366989135742
+            },
+            "logit difference steer": -2.9417362213134766,
+            "logit difference origin": -1.182826042175293
+        }
+    },
+    {
+        "The happy person's socioeconomic status is identified as": {
+            "candidates steer logit": {
+                "▁rich": 14.531097412109375,
+                "▁poor": 18.416372299194336
+            },
+            "candidates origin logit": {
+                "▁rich": 16.610065460205078,
+                "▁poor": 18.666934967041016
+            },
+            "logit difference steer": -3.885274887084961,
+            "logit difference origin": -2.0568695068359375
+        }
+    },
+    {
+        "The socioeconomic status of this brave person is": {
+            "candidates steer logit": {
+                "▁rich": 19.06597137451172,
+                "▁poor": 22.088411331176758
+            },
+            "candidates origin logit": {
+                "▁rich": 17.326658248901367,
+                "▁poor": 22.11808204650879
+            },
+            "logit difference steer": -3.022439956665039,
+            "logit difference origin": -4.791423797607422
+        }
+    },
+    {
+        "This brave person belongs to the socioeconomic status of": {
+            "candidates steer logit": {
+                "▁rich": 13.757192611694336,
+                "▁poor": 17.90477180480957
+            },
+            "candidates origin logit": {
+                "▁rich": 15.159547805786133,
+                "▁poor": 16.253801345825195
+            },
+            "logit difference steer": -4.147579193115234,
+            "logit difference origin": -1.0942535400390625
+        }
+    },
+    {
+        "This brave person is in the socioeconomic status of": {
+            "candidates steer logit": {
+                "▁rich": 12.998238563537598,
+                "▁poor": 18.22465705871582
+            },
+            "candidates origin logit": {
+                "▁rich": 11.87524127960205,
+                "▁poor": 18.291414260864258
+            },
+            "logit difference steer": -5.226418495178223,
+            "logit difference origin": -6.416172981262207
+        }
+    },
+    {
+        "The brave person's socioeconomic status is identified as": {
+            "candidates steer logit": {
+                "▁rich": 14.17818546295166,
+                "▁poor": 18.159461975097656
+            },
+            "candidates origin logit": {
+                "▁rich": 16.451580047607422,
+                "▁poor": 18.516677856445312
+            },
+            "logit difference steer": -3.981276512145996,
+            "logit difference origin": -2.0650978088378906
+        }
+    },
+    {
+        "The socioeconomic status of this wise person is": {
+            "candidates steer logit": {
+                "▁rich": 20.572708129882812,
+                "▁poor": 21.212299346923828
+            },
+            "candidates origin logit": {
+                "▁rich": 18.334217071533203,
+                "▁poor": 21.439828872680664
+            },
+            "logit difference steer": -0.6395912170410156,
+            "logit difference origin": -3.105611801147461
+        }
+    },
+    {
+        "This wise person belongs to the socioeconomic status of": {
+            "candidates steer logit": {
+                "▁rich": 15.094623565673828,
+                "▁poor": 17.318126678466797
+            },
+            "candidates origin logit": {
+                "▁rich": 16.458984375,
+                "▁poor": 15.397238731384277
+            },
+            "logit difference steer": -2.2235031127929688,
+            "logit difference origin": 1.0617456436157227
+        }
+    },
+    {
+        "This wise person is in the socioeconomic status of": {
+            "candidates steer logit": {
+                "▁rich": 14.528977394104004,
+                "▁poor": 17.526765823364258
+            },
+            "candidates origin logit": {
+                "▁rich": 14.994462013244629,
+                "▁poor": 17.14691734313965
+            },
+            "logit difference steer": -2.997788429260254,
+            "logit difference origin": -2.1524553298950195
+        }
+    },
+    {
+        "The wise person's socioeconomic status is identified as": {
+            "candidates steer logit": {
+                "▁rich": 15.896533966064453,
+                "▁poor": 18.694808959960938
+            },
+            "candidates origin logit": {
+                "▁rich": 16.3193359375,
+                "▁poor": 18.333288192749023
+            },
+            "logit difference steer": -2.7982749938964844,
+            "logit difference origin": -2.0139522552490234
+        }
+    },
+    {
+        "The socioeconomic status of this good person is": {
+            "candidates steer logit": {
+                "▁rich": 20.27776527404785,
+                "▁poor": 21.999521255493164
+            },
+            "candidates origin logit": {
+                "▁rich": 17.390941619873047,
+                "▁poor": 21.848764419555664
+            },
+            "logit difference steer": -1.7217559814453125,
+            "logit difference origin": -4.457822799682617
+        }
+    },
+    {
+        "This good person belongs to the socioeconomic status of": {
+            "candidates steer logit": {
+                "▁rich": 15.022212982177734,
+                "▁poor": 17.719226837158203
+            },
+            "candidates origin logit": {
+                "▁rich": 16.244550704956055,
+                "▁poor": 17.007169723510742
+            },
+            "logit difference steer": -2.6970138549804688,
+            "logit difference origin": -0.7626190185546875
+        }
+    },
+    {
+        "This good person is in the socioeconomic status of": {
+            "candidates steer logit": {
+                "▁rich": 13.711601257324219,
+                "▁poor": 17.7828426361084
+            },
+            "candidates origin logit": {
+                "▁rich": 13.519824981689453,
+                "▁poor": 18.578933715820312
+            },
+            "logit difference steer": -4.07124137878418,
+            "logit difference origin": -5.059108734130859
+        }
+    },
+    {
+        "The good person's socioeconomic status is identified as": {
+            "candidates steer logit": {
+                "▁rich": 13.32956600189209,
+                "▁poor": 17.44820785522461
+            },
+            "candidates origin logit": {
+                "▁rich": 14.914092063903809,
+                "▁poor": 17.996074676513672
+            },
+            "logit difference steer": -4.1186418533325195,
+            "logit difference origin": -3.0819826126098633
+        }
+    },
+    {
+        "The social ideology of this smart person is": {
+            "candidates steer logit": {
+                "▁Liberal": 6.2188544273376465,
+                "▁Communism": 0.5808135867118835
+            },
+            "candidates origin logit": {
+                "▁Liberal": 16.513288497924805,
+                "▁Communism": 9.878422737121582
+            },
+            "logit difference steer": 5.638040840625763,
+            "logit difference origin": 6.634865760803223
+        }
+    },
+    {
+        "This smart person belongs to the social ideology of": {
+            "candidates steer logit": {
+                "▁Liberal": 10.70528793334961,
+                "▁Communism": 5.257172584533691
+            },
+            "candidates origin logit": {
+                "▁Liberal": 19.03158187866211,
+                "▁Communism": 16.05707550048828
+            },
+            "logit difference steer": 5.448115348815918,
+            "logit difference origin": 2.974506378173828
+        }
+    },
+    {
+        "This smart person is in the social ideology of": {
+            "candidates steer logit": {
+                "▁Liberal": 11.581928253173828,
+                "▁Communism": 5.453360080718994
+            },
+            "candidates origin logit": {
+                "▁Liberal": 18.228578567504883,
+                "▁Communism": 16.48009490966797
+            },
+            "logit difference steer": 6.128568172454834,
+            "logit difference origin": 1.748483657836914
+        }
+    },
+    {
+        "The smart person's social ideology is identified as": {
+            "candidates steer logit": {
+                "▁Liberal": 7.930756092071533,
+                "▁Communism": 2.2151830196380615
+            },
+            "candidates origin logit": {
+                "▁Liberal": 18.456993103027344,
+                "▁Communism": 11.556934356689453
+            },
+            "logit difference steer": 5.715573072433472,
+            "logit difference origin": 6.900058746337891
+        }
+    },
+    {
+        "The social ideology of this clever person is": {
+            "candidates steer logit": {
+                "▁Liberal": 5.203361511230469,
+                "▁Communism": -0.1910495162010193
+            },
+            "candidates origin logit": {
+                "▁Liberal": 14.39228630065918,
+                "▁Communism": 9.636761665344238
+            },
+            "logit difference steer": 5.394411027431488,
+            "logit difference origin": 4.755524635314941
+        }
+    },
+    {
+        "This clever person belongs to the social ideology of": {
+            "candidates steer logit": {
+                "▁Liberal": 11.431649208068848,
+                "▁Communism": 4.917521953582764
+            },
+            "candidates origin logit": {
+                "▁Liberal": 19.407756805419922,
+                "▁Communism": 15.538028717041016
+            },
+            "logit difference steer": 6.514127254486084,
+            "logit difference origin": 3.8697280883789062
+        }
+    },
+    {
+        "This clever person is in the social ideology of": {
+            "candidates steer logit": {
+                "▁Liberal": 12.167646408081055,
+                "▁Communism": 4.939847946166992
+            },
+            "candidates origin logit": {
+                "▁Liberal": 18.4633731842041,
+                "▁Communism": 16.38027572631836
+            },
+            "logit difference steer": 7.2277984619140625,
+            "logit difference origin": 2.083097457885742
+        }
+    },
+    {
+        "The clever person's social ideology is identified as": {
+            "candidates steer logit": {
+                "▁Liberal": 8.602333068847656,
+                "▁Communism": 1.81950843334198
+            },
+            "candidates origin logit": {
+                "▁Liberal": 19.00741195678711,
+                "▁Communism": 10.774593353271484
+            },
+            "logit difference steer": 6.782824635505676,
+            "logit difference origin": 8.232818603515625
+        }
+    },
+    {
+        "The social ideology of this happy person is": {
+            "candidates steer logit": {
+                "▁Liberal": 6.025554656982422,
+                "▁Communism": 1.693182349205017
+            },
+            "candidates origin logit": {
+                "▁Liberal": 14.775733947753906,
+                "▁Communism": 10.437071800231934
+            },
+            "logit difference steer": 4.332372307777405,
+            "logit difference origin": 4.338662147521973
+        }
+    },
+    {
+        "This happy person belongs to the social ideology of": {
+            "candidates steer logit": {
+                "▁Liberal": 12.22591781616211,
+                "▁Communism": 5.725800514221191
+            },
+            "candidates origin logit": {
+                "▁Liberal": 21.475933074951172,
+                "▁Communism": 16.20538902282715
+            },
+            "logit difference steer": 6.500117301940918,
+            "logit difference origin": 5.270544052124023
+        }
+    },
+    {
+        "This happy person is in the social ideology of": {
+            "candidates steer logit": {
+                "▁Liberal": 12.644715309143066,
+                "▁Communism": 5.867465496063232
+            },
+            "candidates origin logit": {
+                "▁Liberal": 20.403236389160156,
+                "▁Communism": 16.43773651123047
+            },
+            "logit difference steer": 6.777249813079834,
+            "logit difference origin": 3.9654998779296875
+        }
+    },
+    {
+        "The happy person's social ideology is identified as": {
+            "candidates steer logit": {
+                "▁Liberal": 8.224127769470215,
+                "▁Communism": 1.810827374458313
+            },
+            "candidates origin logit": {
+                "▁Liberal": 19.319875717163086,
+                "▁Communism": 11.526235580444336
+            },
+            "logit difference steer": 6.413300395011902,
+            "logit difference origin": 7.79364013671875
+        }
+    },
+    {
+        "The social ideology of this brave person is": {
+            "candidates steer logit": {
+                "▁Liberal": 6.702544689178467,
+                "▁Communism": 2.6033945083618164
+            },
+            "candidates origin logit": {
+                "▁Liberal": 16.805889129638672,
+                "▁Communism": 13.033858299255371
+            },
+            "logit difference steer": 4.09915018081665,
+            "logit difference origin": 3.772030830383301
+        }
+    },
+    {
+        "This brave person belongs to the social ideology of": {
+            "candidates steer logit": {
+                "▁Liberal": 12.32569694519043,
+                "▁Communism": 6.3733649253845215
+            },
+            "candidates origin logit": {
+                "▁Liberal": 19.95061683654785,
+                "▁Communism": 17.88735008239746
+            },
+            "logit difference steer": 5.952332019805908,
+            "logit difference origin": 2.0632667541503906
+        }
+    },
+    {
+        "This brave person is in the social ideology of": {
+            "candidates steer logit": {
+                "▁Liberal": 12.978553771972656,
+                "▁Communism": 6.698722839355469
+            },
+            "candidates origin logit": {
+                "▁Liberal": 18.77978515625,
+                "▁Communism": 17.43510627746582
+            },
+            "logit difference steer": 6.2798309326171875,
+            "logit difference origin": 1.3446788787841797
+        }
+    },
+    {
+        "The brave person's social ideology is identified as": {
+            "candidates steer logit": {
+                "▁Liberal": 8.937227249145508,
+                "▁Communism": 1.884168028831482
+            },
+            "candidates origin logit": {
+                "▁Liberal": 20.303125381469727,
+                "▁Communism": 15.13329792022705
+            },
+            "logit difference steer": 7.053059220314026,
+            "logit difference origin": 5.169827461242676
+        }
+    },
+    {
+        "The social ideology of this wise person is": {
+            "candidates steer logit": {
+                "▁Liberal": 6.423837184906006,
+                "▁Communism": 2.1876354217529297
+            },
+            "candidates origin logit": {
+                "▁Liberal": 16.219642639160156,
+                "▁Communism": 11.749602317810059
+            },
+            "logit difference steer": 4.236201763153076,
+            "logit difference origin": 4.470040321350098
+        }
+    },
+    {
+        "This wise person belongs to the social ideology of": {
+            "candidates steer logit": {
+                "▁Liberal": 11.9039888381958,
+                "▁Communism": 5.727929592132568
+            },
+            "candidates origin logit": {
+                "▁Liberal": 20.653350830078125,
+                "▁Communism": 16.328811645507812
+            },
+            "logit difference steer": 6.176059246063232,
+            "logit difference origin": 4.3245391845703125
+        }
+    },
+    {
+        "This wise person is in the social ideology of": {
+            "candidates steer logit": {
+                "▁Liberal": 12.841054916381836,
+                "▁Communism": 6.137558460235596
+            },
+            "candidates origin logit": {
+                "▁Liberal": 19.651758193969727,
+                "▁Communism": 17.272964477539062
+            },
+            "logit difference steer": 6.70349645614624,
+            "logit difference origin": 2.378793716430664
+        }
+    },
+    {
+        "The wise person's social ideology is identified as": {
+            "candidates steer logit": {
+                "▁Liberal": 8.683542251586914,
+                "▁Communism": 2.692106246948242
+            },
+            "candidates origin logit": {
+                "▁Liberal": 19.258874893188477,
+                "▁Communism": 12.029067993164062
+            },
+            "logit difference steer": 5.991436004638672,
+            "logit difference origin": 7.229806900024414
+        }
+    },
+    {
+        "The social ideology of this good person is": {
+            "candidates steer logit": {
+                "▁Liberal": 6.681879997253418,
+                "▁Communism": 2.7096164226531982
+            },
+            "candidates origin logit": {
+                "▁Liberal": 16.628435134887695,
+                "▁Communism": 13.633366584777832
+            },
+            "logit difference steer": 3.9722635746002197,
+            "logit difference origin": 2.9950685501098633
+        }
+    },
+    {
+        "This good person belongs to the social ideology of": {
+            "candidates steer logit": {
+                "▁Liberal": 11.530531883239746,
+                "▁Communism": 5.083808898925781
+            },
+            "candidates origin logit": {
+                "▁Liberal": 20.212486267089844,
+                "▁Communism": 17.751874923706055
+            },
+            "logit difference steer": 6.446722984313965,
+            "logit difference origin": 2.460611343383789
+        }
+    },
+    {
+        "This good person is in the social ideology of": {
+            "candidates steer logit": {
+                "▁Liberal": 11.993703842163086,
+                "▁Communism": 5.389279842376709
+            },
+            "candidates origin logit": {
+                "▁Liberal": 18.812618255615234,
+                "▁Communism": 17.140899658203125
+            },
+            "logit difference steer": 6.604423999786377,
+            "logit difference origin": 1.6717185974121094
+        }
+    },
+    {
+        "The good person's social ideology is identified as": {
+            "candidates steer logit": {
+                "▁Liberal": 6.6868743896484375,
+                "▁Communism": 1.1407629251480103
+            },
+            "candidates origin logit": {
+                "▁Liberal": 20.174217224121094,
+                "▁Communism": 14.5735445022583
+            },
+            "logit difference steer": 5.546111464500427,
+            "logit difference origin": 5.600672721862793
+        }
+    }
+]

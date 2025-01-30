@@ -3,7 +3,6 @@ import numpy as np
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from transformer_lens import HookedTransformer
 from util.option_dict_4 import *
-from util.prompts import  get_prompt
 from util.lm_format import apply_format
 from util.steering import *
 
@@ -41,8 +40,9 @@ def get_args():
     parser.add_argument('--bg_type', choices=["fixed", "gen"], default="fixed")
     parser.add_argument('--steer_file_path', type=str)
     parser.add_argument('--save_dir_path', type=str)
+    parser.add_argument('--file_path', type=str, default=None, required=True)
     parser.add_argument('--steer_mode', action='store_true', help="Enable steering mode")
-
+    
     parser.add_argument('--inference_type', type=str, default="base")
     parser.add_argument('--seed', type=int, default=16)
     return parser.parse_args()
@@ -56,7 +56,9 @@ def main():
     tokenizer = AutoTokenizer.from_pretrained(args.tokenizer_name)
     
     #data=json.load(open(f"../data/TRAIT/{args.testset}.json", encoding='utf-8'))
-    file_path = "./data/bias/combined_sentences.txt"
+    file_path = args.file_path
+    
+    
 
     try:
         with open(file_path, "r", encoding="utf-8") as file:
@@ -76,8 +78,7 @@ def main():
     for i, bg_item in enumerate(bg):
         save_file_dir=os.path.join(save_dir, f"{bg_item['idx']}.json")
         print("save_dir", save_dir)
-        if not os.path.exists(save_dir):
-            os.makedirs(save_dir)
+        os.makedirs(save_dir, exist_ok=True)
         
         res_arr=[]
         for idx, input in enumerate(data):
@@ -86,23 +87,32 @@ def main():
             encoded=apply_format(input, args.inference_type, tokenizer)
             idx_dict, steering_vectors = get_steer_vectors(sae,args.bg_type, bg_item['features'])
             print("we will steer the features:", idx_dict)
-            
-            if args.steer_mode:
-                print("Steer Mode: ON")
-                logits = get_logit_steer(encoded, model, args.layer, args.coeff, steering_vectors, True, seed=args.seed).squeeze().tolist()
-            else:
-                print("Steer Mode: OFF")
-                logits = get_logit(model, encoded, device).squeeze().tolist()
-            vocab_logit={}
-            compare_tokens = get_option_token(input)
+            result[input] = {
+                "candidates steer logit": {},
+                "candidates origin logit": {}
+            }
+
+            logits_steer = get_logit_steer(encoded, model, args.layer, args.coeff, steering_vectors, True, seed=args.seed).squeeze().tolist()
+            logits_no_steer = get_logit(model, encoded, device).squeeze().tolist()
+            vocab_logit_steer={}
+            vocab_logit_no_steer={}
+            compare_tokens = get_demographic_pair(input)
 
             for token in compare_tokens:
-                vocab_logit[token]=logits[0, tokenizer.convert_tokens_to_ids(token)].item()
-                result[input]["candidates logit"][token] = vocab_logit[token]
-
-            logit_diff = abs(vocab_logit[compare_tokens[0]] - vocab_logit[compare_tokens[1]])
-            result[input]["logit difference"] = logit_diff
-                
+                vocab_logit_steer[token]=logits_steer[tokenizer.convert_tokens_to_ids(token)]
+                result[input]["candidates steer logit"][token] = vocab_logit_steer[token]
+                vocab_logit_no_steer[token]=logits_no_steer[tokenizer.convert_tokens_to_ids(token)]
+                result[input]["candidates origin logit"][token] = vocab_logit_no_steer[token]
+            if bg_item['idx'] % 2 == 0:  # Even
+                print(f"The index {bg_item['idx']} is even.")
+                logit_diff_steer = vocab_logit_steer[compare_tokens[1]] - vocab_logit_steer[compare_tokens[0]]
+                logit_diff_origin = vocab_logit_no_steer[compare_tokens[1]] - vocab_logit_no_steer[compare_tokens[0]]
+            else:  # Odd
+                print(f"The index {bg_item['idx']} is odd.")
+                logit_diff_steer = vocab_logit_steer[compare_tokens[0]] - vocab_logit_steer[compare_tokens[1]]
+                logit_diff_origin = vocab_logit_no_steer[compare_tokens[0]] - vocab_logit_no_steer[compare_tokens[1]]
+            result[input]["logit difference steer"] = logit_diff_steer
+            result[input]["logit difference origin"] = logit_diff_origin
             res_arr.append(result)
             save_json(save_file_dir, res_arr)
         save_json(save_file_dir, res_arr)

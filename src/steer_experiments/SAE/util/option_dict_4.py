@@ -8,10 +8,10 @@ def get_option_token(option_type):
     
 def get_demographic_pair(prompt):
     if "gender" in prompt:
-        return ["female", "male"]
+        return ["▁female", "▁male"]
     elif "age" in prompt:
-        return ["young", "old"]
+        return ["▁youth", "▁old"]
     elif "socioeconomic status" in prompt:
-        return ["rich", "poor"]
+        return ["▁rich", "▁poor"]
     elif "social ideology" in prompt:
-        return ["liberal", "communism"]
+        return ["▁Liberal", "▁Communism"]

@@ -2,7 +2,6 @@
 Demographic_Dim = ["gender", "age", "socioeconomic status", "social ideology"]
 
 modifiers = {
-  "Negative": ["lonely", "awful", "lazy", "sick", "rude", "stupid"],
   "Positive": ["smart", "clever", "happy", "brave", "wise", "good"],
 }
 
